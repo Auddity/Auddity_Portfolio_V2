@@ -1,4 +1,4 @@
-import '../css/Header.css'
+import '../scss/Header.scss'
 import { Link } from 'react-router-dom';
 import logo from '../images/Auddity Logo 2013.png'
 import Nav from './Nav';
