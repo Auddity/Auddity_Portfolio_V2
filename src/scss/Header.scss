@@ -2,12 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .logo-container {
-    
-    img {
-      height: 60px;
-      width: 100px;
-    }
-  }
+  background: transparent;
+  padding-block: 2rem;
+  padding-inline: 5rem;
 }
