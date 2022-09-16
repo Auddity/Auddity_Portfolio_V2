@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import useWindowSize from '../hooks/useWindowSize';
+import 'remixicon/fonts/remixicon.css'
+import '../scss/Nav.scss'
 
 const Nav = () => {
   const { width } = useWindowSize();
@@ -8,7 +10,7 @@ const Nav = () => {
     <nav className="Nav">
       {width < 768 ?
         <div className="bar-icon">
-        BARS
+          <i className="ri-menu-line"></i>
         </div>
       :
         <div className="link-container">
