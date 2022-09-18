@@ -16,16 +16,17 @@ const Nav = () => {
 
   return (
     <nav className={open ? "Nav showNav" : "Nav"}>
-      {width < 768 ?
+      {width < 768 &&
         <div className="bar-icon"
-          style={open ? rotateBars : null}
-          onClick={handleMenu}
+        style={open ? rotateBars : null}
+        onClick={handleMenu}
         >
           <i className="ri-menu-line" ></i>
         </div>
-      :
-        <div className="link-container"
-        >
+      }
+      
+      {(width > 768 || open) &&
+        <div className="link-container">
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
