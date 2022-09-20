@@ -24,11 +24,17 @@
       justify-content: center;
       width: 100%;
       background: v.$transparentBg;
-      color: inherit;
       padding-block-start: 6rem;
 
       a {
         padding-block: 1rem;
+        font-size: 1.9rem;
+        letter-spacing: 1.5px;
+
+        // &:hover {
+        //   color: v.$textAlternate;
+        //   text-shadow: v.$textHover;
+        // }
       }
     }
   }

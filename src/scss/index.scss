@@ -23,15 +23,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: f.setTextColor(#000);
   text-decoration: none;
 }
 
-// a:visited {
-//   color: inherit;
-// }
-
 a:hover {
-  color: v.$textAlternate;
-  text-shadow: v.$textHover;
+  color: v.$textHover;
+  text-shadow: v.$textShadow;
+  
 }
