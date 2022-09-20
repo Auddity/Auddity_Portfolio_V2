@@ -1,8 +1,10 @@
+import '../scss/_Hero.scss'
+
 const Home = () => {
   return (
-    <>
-      Home
-    </>
+    <main className="Hero">
+      
+    </main>
   )
 }
 

@@ -1,0 +1,20 @@
+@use './variables' as v;
+
+.Hero {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: calc(100% - 8rem);
+  background-image: v.$backgroundGradient;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/pexels-danny-meneses-943096.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .11;
+  }
+}
