@@ -1,3 +1,6 @@
+@use './functions.scss' as f;
+@use './variables.scss' as v;
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +13,25 @@ html {
 
 body {
   font-family: 'Cinzel Decorative', cursive,
-    sans-serif;
+  sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
+  background-color: #000;
+  color: f.setTextColor(#000);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// a:visited {
+//   color: inherit;
+// }
+
+a:hover {
+  color: v.$textAlternate;
+  text-shadow: v.$textHover;
 }

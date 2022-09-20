@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import 'remixicon/fonts/remixicon.css'
-import '../scss/Nav.scss'
+import '../scss/_Nav.scss'
 
 const Nav = () => {
   const { width } = useWindowSize();

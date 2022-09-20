@@ -1,0 +1,9 @@
+@use './variables.scss' as v;
+
+@function setTextColor($color) {
+  @if(lightness($color) < 100) {
+    @return v.$textDefault;
+  } @else {
+    @return black; 
+  }
+}
