@@ -13,7 +13,6 @@ const Header = () => {
           <p>Home</p>
         </Link>
       </div>
-      Header
       <Nav />
     </header>
   )

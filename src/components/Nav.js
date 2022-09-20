@@ -27,9 +27,9 @@ const Nav = () => {
       
       {(width > 768 || open) &&
         <div className="link-container">
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/portfolio" onClick={handleMenu}>Portfolio</Link>
+          <Link to="/about" onClick={handleMenu}>About</Link>
+          <Link to="/contact" onClick={handleMenu}>Contact</Link>
         </div>
       }
     </nav>
