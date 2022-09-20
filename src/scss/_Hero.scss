@@ -17,4 +17,23 @@
     background-repeat: no-repeat;
     opacity: .11;
   }
+
+  &-logo-ctnr {
+    border: 1px solid white;
+
+    img {
+      padding-inline-start: 2rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-info-ctnr {
+    .tech-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
