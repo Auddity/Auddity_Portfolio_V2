@@ -6,6 +6,11 @@
   text-align: center;
   height: calc(100% - 8rem);
   background-image: v.$backgroundGradient;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-block-start: 11rem;
 
   &::before {
     content: '';
@@ -19,7 +24,7 @@
   }
 
   &-logo-ctnr {
-    border: 1px solid white;
+    // border: 1px solid white;
 
     img {
       padding-inline-start: 2rem;
@@ -30,10 +35,25 @@
   }
 
   &-info-ctnr {
+    margin-block-start: 2.5rem;
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
     .tech-list {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 75%;
+      line-height: 3;
+      margin-inline: auto;
+      margin-block-start: 2.5rem;
+
+      p {
+        margin-inline: 2rem;
+      }
     }
   }
 }

@@ -10,11 +10,11 @@ const Home = () => {
       <div className="Hero-info-ctnr">
         <h1>Front End Develompent</h1>
         <div className="tech-list">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>SASS</p>
-          <p>JAVASCRIPT</p>
-          <p>REACT</p>
+          <p>Html</p>
+          <p>cSs</p>
+          <p>Sass</p>
+          <p>JavaScript</p>
+          <p>React</p>
         </div>
       </div>
     </main>
