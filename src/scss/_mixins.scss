@@ -1,0 +1,30 @@
+%flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  @extend %flex;
+  justify-content: center;
+}
+
+@mixin flexSpaceBetween {
+  @extend %flex;
+  justify-content: space-between;
+}
+
+@mixin flexAround {
+  @extend %flex;
+  justify-content: space-around;
+}
+
+@mixin flexStart {
+  @extend %flex;
+  justify-content: flex-start;
+}
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}

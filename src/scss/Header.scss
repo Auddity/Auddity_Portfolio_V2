@@ -1,10 +1,11 @@
+@use './mixins' as mx;
+
 .Header {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include mx.flexSpaceBetween;
   height: 8rem;
   background: transparent;
   padding-block: 2rem;
   padding-inline: 5rem;
+  z-index: 1;
 }

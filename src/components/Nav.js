@@ -11,6 +11,7 @@ const Nav = () => {
     transform: 'rotate(-90deg)',
   }
   const handleMenu = () => {
+    if(width > 768) return
     setOpen(prev => !prev)
   }
 
