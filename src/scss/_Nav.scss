@@ -9,6 +9,14 @@
     cursor: pointer;
   }
 
+  .link-container {
+    a {
+      @include mx.mq(768px) {
+        margin-inline: 2rem;
+      }
+    }
+  }
+
   &.showNav {
     .bar-icon {
       position: relative;
@@ -32,11 +40,6 @@
         padding-block: 1rem;
         font-size: 1.9rem;
         letter-spacing: 1.5px;
-        cursor: pointer;
-        // @include mx.mq(768px) {
-        //   margin-inline: 2rem;
-        //   z-index: 6;
-        // }
       }
     }
   }

@@ -2,10 +2,19 @@
 
 .Header {
   position: relative;
-  @include mx.flexSpaceBetween;
   height: 8rem;
   background: transparent;
   padding-block: 2rem;
   padding-inline: 5rem;
   z-index: 1;
+  @include mx.mq(1024px) {
+    padding-block-start: 6rem;
+    padding-inline: 8rem;
+  }
+
+  &-content-ctnr {
+    @include mx.flexSpaceBetween;
+    max-width: 120rem;
+    margin-inline: auto;
+  }
 }
