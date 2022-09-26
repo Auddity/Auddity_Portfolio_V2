@@ -2,29 +2,17 @@
 @use './mixins' as mx;
 
 .Hero {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  height: calc(100% - 8rem);
-  background-image: v.$backgroundGradient;
   @include mx.flexStart;
   flex-direction: column;
   padding-block-start: 11rem;
 
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('../images/pexels-danny-meneses-943096.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-block-start: -8rem;
-    opacity: .11;
-  }
-
   &-logo-ctnr {
-    // border: 1px solid white;
+    @include mx.mq(768px) {
+      width: 70%;
+    }
+    @include mx.mq(1068px) {
+      width: 50%;
+    }
 
     img {
       padding-inline-start: 2rem;

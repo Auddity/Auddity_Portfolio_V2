@@ -1,0 +1,24 @@
+@use './variables' as v;
+@use './mixins' as mx;
+
+.Layout {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-image: v.$backgroundGradient;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/pexels-danny-meneses-943096.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .11;
+    @include mx.mq(1008px) {
+      margin-block-start: -10rem;
+    }
+  }
+  
+}
