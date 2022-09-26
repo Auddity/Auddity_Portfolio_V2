@@ -11,7 +11,7 @@ const Home = () => {
         <h1>Front End Develompent</h1>
         <div className="tech-list">
           <p>Html</p>
-          <p>cSs</p>
+          <p>css</p>
           <p>Sass</p>
           <p>JavaScript</p>
           <p>React</p>
