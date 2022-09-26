@@ -7,6 +7,8 @@
   padding-block-start: 11rem;
 
   &-logo-ctnr {
+    max-width: 70.5rem;
+    
     @include mx.mq(768px) {
       width: 70%;
     }

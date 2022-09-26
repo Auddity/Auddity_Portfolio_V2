@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Splitter Tip Calculator",
+      "built-with": "React, CSS",
+      "desc": "Users can enter the bill total, select a preset or custom percentage to tip, and enter the numboer of people in the dinning party.",
+      "features": [
+        "State is controlled by useReducer.",
+        "Uses controlled input compenents",
+        "Conditional rendering of elements and styles based on state",
+        "Mobile first approach" 
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Team Stat Tracker WebApp",
+      "built-with": "Vanilla JS, SASS, HTML",
+      "desc": "Track your football team's individual player stats.",
+      "features": [
+        "Local storage is used to keep track of data",
+        "CRUD functionality - User can create a player and enter their stats, edit a player's stats, update a player's stats, and delete a player",
+        "Player's stats are displayed in their respective catagories and are sorted in order form highest to lowest",
+        "Mobile first approach"
+      ]
+    }, 
+    {
+      "id": 3,
+      "title": "URL Shortening Site",
+      "built-with":"Vanilla JS, SASS, HTML",
+      "desc": "Single Page Site to Shorten a URL",
+      "features": [
+        "Uses Shrtcode's API to shorten a submitted URL",
+        "With a promise constructor, used the xhr object to make a HTTP request to Shrtcode",
+        "Upon each succesful request a new element is added to the DOM, displaying the original URL and the shortened URL",
+        "Uses the browser's clipboard API to copy the short code on a click of a button",
+        "Mobile first approach"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Spinner Studio Website",
+      "built-with":"Vanilla JS, SASS, HTML",
+      "desc": "Single page site for Spinner Studio. An audio recording and production studio",
+      "features": [
+        "Ability to scroll to a specific spot on the page when clicking a link"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Crowdfunding Mock-up Page",
+      "built-with":"Vanilla JS, SASS, HTML",
+      "desc": "A single page site that mimics the behavior of the front-end for a crowdfunding site",
+      "features": [
+        "Uses multiple modals for presenting information and updated user. (UI/UX)",
+        "Has multiple ways of making a pledge, either directly by a button or by selecting a specific pledge option", 
+        "Depending on user selection, the corresponding option will be auto-selected or have no option auto-selected",
+        "After each pledge a status display will be updated.  It Also has a status bar which will update"
+      ]
+    }
+  ]
+}
