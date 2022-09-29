@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom'
 const Portfolio = () => {
   const [portData, setPortData] = useState({});
   
-
   useEffect(() => {
     const fetchPortData = async () => {
       try {
-        const data = await (portfolioData)
+        const data = await portfolioData
         setPortData(data.projects)
       } catch(err) {
         console.log(err)
       }
     }
+    console.log('useEffect')
 
     fetchPortData();
   }, [])
