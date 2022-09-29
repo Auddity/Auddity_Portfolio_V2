@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout'
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
+import PortfolioItem from './components/PortfolioItem';
 import About from './components/About';
 import Contact from './components/Contact';
 import Missing from './components/Missing';
@@ -14,7 +15,7 @@ function App() {
         <Route index element={<Home /> } />
         <Route path="portfolio" >
           <Route index element={<Portfolio /> } />
-          {/* <Route path=":id" element={<PortfolioPage />} /> */}
+          <Route path=":id" element={<PortfolioItem />} />
         </Route>
         <Route path="about" element={<About /> } />
         <Route path="contact" element={<Contact /> } />

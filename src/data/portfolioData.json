@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Splitter Tip Calculator",
-      "built-with": "React, CSS",
+      "built_with": "React, CSS",
       "desc": "Users can enter the bill total, select a preset or custom percentage to tip, and enter the numboer of people in the dinning party.",
       "features": [
         "State is controlled by useReducer.",
@@ -11,12 +11,12 @@
         "Conditional rendering of elements and styles based on state",
         "Mobile first approach" 
       ],
-      "image-url": "../images/SplitterAppScreenShot.png"
+      "image": "../src/images/SplitterAppScreenShot.png"
     },
     {
       "id": 2,
       "title": "Team Stat Tracker WebApp",
-      "built-with": "Vanilla JS, SASS, HTML",
+      "built_with": "Vanilla JS, SASS, HTML",
       "desc": "Track your football team's individual player stats.",
       "features": [
         "Local storage is used to keep track of data",
@@ -24,12 +24,12 @@
         "Player's stats are displayed in their respective catagories and are sorted in order form highest to lowest",
         "Mobile first approach"
       ],
-      "image-url": "../images/TeamStatTrackerApp.png"
+      "image": "../src/images/TeamStatTrackerApp.png"
     }, 
     {
       "id": 3,
       "title": "URL Shortening Site",
-      "built-with":"Vanilla JS, SASS, HTML",
+      "built_with":"Vanilla JS, SASS, HTML",
       "desc": "Single Page Site to Shorten a URL",
       "features": [
         "Uses Shrtcode's API to shorten a submitted URL",
@@ -38,22 +38,22 @@
         "Uses the browser's clipboard API to copy the short code on a click of a button",
         "Mobile first approach"
       ],
-      "image-url": "../images/Shortly Screenshot 2022-02-08.png"
+      "image": "../src/images/Shortly Screenshot 2022_02-08.png"
     },
     {
       "id": 4,
       "title": "Spinner Studio Website",
-      "built-with":"Vanilla JS, SASS, HTML",
+      "built_with":"Vanilla JS, SASS, HTML",
       "desc": "Single page site for Spinner Studio. An audio recording and production studio",
       "features": [
         "Ability to scroll to a specific spot on the page when clicking a link"
       ],
-      "image-url": "../images/Spinner-ScreenShot.png"
+      "image": "../src/images/Spinner-ScreenShot.png"
     },
     {
       "id": 5,
       "title": "Crowdfunding Mock-up Page",
-      "built-with":"Vanilla JS, SASS, HTML",
+      "built_with":"Vanilla JS, SASS, HTML",
       "desc": "A single page site that mimics the behavior of the front-end for a crowdfunding site",
       "features": [
         "Uses multiple modals for presenting information and updated user. (UI/UX)",
@@ -61,7 +61,7 @@
         "Depending on user selection, the corresponding option will be auto-selected or have no option auto-selected",
         "After each pledge a status display will be updated.  It Also has a status bar which will update"
       ],
-      "image-url": "../images/crowdfund-fem-screenshot.png"
+      "image": "../src/images/crowdfund-fem-screenshot.png"
     }
   ]
 }
