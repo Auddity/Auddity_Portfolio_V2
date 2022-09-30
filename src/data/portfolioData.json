@@ -10,8 +10,7 @@
         "Uses controlled input compenents",
         "Conditional rendering of elements and styles based on state",
         "Mobile first approach" 
-      ],
-      "image": "../src/images/SplitterAppScreenShot.png"
+      ]
     },
     {
       "id": 2,
@@ -23,8 +22,7 @@
         "CRUD functionality - User can create a player and enter their stats, edit a player's stats, update a player's stats, and delete a player",
         "Player's stats are displayed in their respective catagories and are sorted in order form highest to lowest",
         "Mobile first approach"
-      ],
-      "image": "../src/images/TeamStatTrackerApp.png"
+      ]
     }, 
     {
       "id": 3,
@@ -37,8 +35,7 @@
         "Upon each succesful request a new element is added to the DOM, displaying the original URL and the shortened URL",
         "Uses the browser's clipboard API to copy the short code on a click of a button",
         "Mobile first approach"
-      ],
-      "image": "../src/images/Shortly Screenshot 2022_02-08.png"
+      ]
     },
     {
       "id": 4,
@@ -47,8 +44,7 @@
       "desc": "Single page site for Spinner Studio. An audio recording and production studio",
       "features": [
         "Ability to scroll to a specific spot on the page when clicking a link"
-      ],
-      "image": "../src/images/Spinner-ScreenShot.png"
+      ]
     },
     {
       "id": 5,
@@ -60,8 +56,7 @@
         "Has multiple ways of making a pledge, either directly by a button or by selecting a specific pledge option", 
         "Depending on user selection, the corresponding option will be auto-selected or have no option auto-selected",
         "After each pledge a status display will be updated.  It Also has a status bar which will update"
-      ],
-      "image": "../src/images/crowdfund-fem-screenshot.png"
+      ]
     }
   ]
 }
