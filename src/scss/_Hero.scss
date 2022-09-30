@@ -1,10 +1,15 @@
 @use './variables' as v;
 @use './mixins' as mx;
+@use './functions' as f;
 
 .Hero {
   @include mx.flexStart;
   flex-direction: column;
+  height: calc(100vh - 80px);
   padding-block-start: 11rem;
+  @include mx.mq(1024px) {
+    height: calc(100vh - 100px)
+  }
 
   &-logo-ctnr {
     max-width: 70.5rem;
@@ -12,7 +17,7 @@
     @include mx.mq(768px) {
       width: 70%;
     }
-    @include mx.mq(1068px) {
+    @include mx.mq(1024px) {
       width: 50%;
     }
 

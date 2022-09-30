@@ -1,8 +1,24 @@
+@use './mixins' as mx;
+
 .Portfolio {
   position: relative;
- 
-  img {
-    height :10rem;
-    width: 20rem;
+  height: 100%;
+
+  &-link-container {
+    @include mx.flexCenter;
+    flex-direction: column;
+    width: 95%;
+    margin-inline: auto;
+
+    .port-item-link {
+      width: 100%;
+
+      &-content {
+        
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
