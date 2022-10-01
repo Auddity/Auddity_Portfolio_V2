@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Splitter Tip Calculator",
       "built_with": "React, CSS",
-      "desc": "Users can enter the bill total, select a preset or custom percentage to tip, and enter the numboer of people in the dinning party.",
+      "desc": "Users can enter the bill total, select a preset or custom percentage to tip, and enter the number of people in the dinning party.",
       "features": [
         "State is controlled by useReducer.",
         "Uses controlled input compenents",

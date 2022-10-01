@@ -27,6 +27,9 @@ const Portfolio = () => {
             to={`portfolio/${item.id}`}
             >
               <div className="port-item-link-content">
+                <div className="overlay">
+                  <p>{item.desc}</p>
+                </div>
                 <img src={imageArray[idx]} alt={item.title} />  
                 <div className="port-item-link-content-info">
                   <p>{item.title}</p>
