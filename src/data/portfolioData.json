@@ -15,7 +15,7 @@
     {
       "id": 2,
       "title": "Team Stat Tracker WebApp",
-      "built_with": "Vanilla JS, SASS, HTML",
+      "built_with": "Vanilla JavaScript, SASS, HTML",
       "desc": "Track your football team's individual player stats.",
       "features": [
         "Local storage is used to keep track of data",
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "title": "URL Shortening Site",
-      "built_with":"Vanilla JS, SASS, HTML",
+      "built_with":"Vanilla JavaScript, SASS, HTML",
       "desc": "Single Page Site to Shorten a URL",
       "features": [
         "Uses Shrtcode's API to shorten a submitted URL",
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "title": "Spinner Studio Website",
-      "built_with":"Vanilla JS, SASS, HTML",
+      "built_with":"Vanilla JavaScript, SASS, HTML",
       "desc": "Single page site for Spinner Studio. An audio recording and production studio",
       "features": [
         "Ability to scroll to a specific spot on the page when clicking a link"
@@ -49,7 +49,7 @@
     {
       "id": 5,
       "title": "Crowdfunding Mock-up Page",
-      "built_with":"Vanilla JS, SASS, HTML",
+      "built_with":"Vanilla JavaScript, SASS, HTML",
       "desc": "A single page site that mimics the behavior of the front-end for a crowdfunding site",
       "features": [
         "Uses multiple modals for presenting information and updated user. (UI/UX)",
