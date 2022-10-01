@@ -2,7 +2,7 @@
 @use './mixins' as mx;
 
 @function setTextColor($color) {
-  @if(lightness($color) < 100) {
+  @if(lightness($color) < 90) {
     @return v.$textDefault;
   } @else {
     @return black; 

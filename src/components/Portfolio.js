@@ -7,14 +7,14 @@ import img5 from '../images/crowdfund-fem-screenshot.png'
 import { Link } from 'react-router-dom'
 import '../scss/_Portfolio.scss'
 
-
 const Portfolio = () => {
   const portData = portfolioData.projects;
   const imageArray = [img1, img2, img3, img4, img5];
 
   return (
     <main className='Portfolio'>
-      <div className="Portfolio-link-container">
+      <h1>Select to view details of the project</h1>
+      <div className="Portfolio-links-container">
         {portData.map((item, idx)=> {
           return (
             <Link 
@@ -24,6 +24,10 @@ const Portfolio = () => {
             >
               <div className="port-item-link-content">
                 <img src={imageArray[idx]} alt={item.title} />  
+                <div className="port-item-link-content-info">
+                  <p>{item.title}</p>
+                  <p>{item.built_with}</p>
+                </div>
               </div>
             </Link>
           )

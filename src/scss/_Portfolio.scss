@@ -1,22 +1,46 @@
+@use './variables' as v;
 @use './mixins' as mx;
+@use './functions' as f;
 
 .Portfolio {
   position: relative;
   height: 100%;
+  padding-block-end: 2rem;
+  
+  h1 {
+    width: 70%;
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-inline: auto;
+    margin-block: 2rem;
+  }
 
-  &-link-container {
+  &-links-container {
     @include mx.flexCenter;
     flex-direction: column;
-    width: 95%;
+    gap: 2rem;
+    width: 85%;
     margin-inline: auto;
-
+    
     .port-item-link {
       width: 100%;
-
+      height: 100%;
+      
       &-content {
+        position: relative;
         
         img {
           width: 100%;
+        }
+        
+        &-info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: v.$transparentBg;
+          letter-spacing: .15rem;
+          padding-block: 1rem;
         }
       }
     }
