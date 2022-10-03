@@ -11,7 +11,7 @@ const Portfolio = () => {
   const portData = portfolioData.projects;
   const imageArray = [img1, img2, img3, img4, img5];
 
-  const buildInfoFunc = (info) => {
+  const buildInfoFormat = (info) => {
     return info.split(',').join(' / ');
   }
 
@@ -19,12 +19,12 @@ const Portfolio = () => {
     <main className='Portfolio'>
       <h1>Select to view details of the project</h1>
       <div className="Portfolio-links-container">
-        {portData.map((item, idx)=> {
+        {portData.map((item, idx) => {
           return (
             <Link 
             className="port-item-link"
             key={item.id}
-            to={`portfolio/${item.id}`}
+            to={`${item.id}`}
             >
               <div className="port-item-link-content">
                 <div className="overlay-content">
@@ -34,7 +34,7 @@ const Portfolio = () => {
                 <img src={imageArray[idx]} alt={item.title} />  
                 <div className="port-item-link-content-info">
                   <p>{item.title}</p>
-                  <p>{buildInfoFunc(item.built_with)}</p>
+                  <p>{buildInfoFormat(item.built_with)}</p>
                 </div>
               </div>
             </Link>
