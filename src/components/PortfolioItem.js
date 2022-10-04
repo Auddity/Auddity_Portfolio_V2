@@ -19,9 +19,15 @@ const PortfolioItem = () => {
     <main className="PortfolioItem">
       <article className="project">
         <h1>{project.title}</h1>
+          <div className="project-anchor-content">
         <a href={project.live_url} target="blank">
-          <img src={imageArray[id - 1]} alt={project.title} />
+            <div className="overlay-content">
+              <p>Go to live site</p>
+            </div>
+            <img src={imageArray[id - 1]} alt={project.title} />
+            <div className="overlay-bg"></div>
         </a>
+          </div>
         <ul className="project-features">
           {project.features.map((feature, idx) => {
             return <li key={idx}>{feature}</li>

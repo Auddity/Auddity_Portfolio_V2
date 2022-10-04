@@ -1,18 +1,70 @@
+@use 'variables' as v;
+@use 'mixins' as mx;
+
 .PortfolioItem {
   position: relative;
   height: calc(100vh - 80px);
 
+  @include mx.mq(1024px) {
+    height: calc(100vh - 100px);
+  }
+
   .project {
     width: 85%;
+    max-width: 90rem;
     margin-inline: auto;
 
     h1 {
       padding-block: 5rem;
     }
 
-    img {
-      width: 85%;
+    &-anchor-content {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+
+      &:hover {
+        .overlay-content {
+          inset: 0;
+          transition: inset .3s ease-in-out .2s;
+        }
+        .overlay-bg {
+          inset: 0;
+          transition: inset .4s ease-in-out;
+        }
+      }
+
+      .overlay-content {
+        position: absolute;
+        left: -50%;
+        top: -100%;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        padding-inline: 2rem;
+        z-index: 1;
+        transition: inset .3s ease-in-out;
+
+        p {
+          align-self: center;
+          line-height: 2;
+        }
+      }
+
+      .overlay-bg {
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: v.$transparentBg;
+        transition: inset .4s ease-in-out;
+      }
+
+      img {
+        width: 100%;
+      }
     }
+
 
     &-features {
       margin-block-start: 2rem;
