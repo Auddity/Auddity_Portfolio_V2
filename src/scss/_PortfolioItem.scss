@@ -1,14 +1,28 @@
 .PortfolioItem {
   position: relative;
   height: calc(100vh - 80px);
-  z-index: 1;
 
   .project {
     width: 85%;
     margin-inline: auto;
+
+    h1 {
+      padding-block: 5rem;
+    }
+
+    img {
+      width: 85%;
+    }
+
+    &-features {
+      margin-block-start: 2rem;
+      
+      li {
+        padding-block: .5rem;
+        line-height: 1.45;
+        letter-spacing: .2px;
+      }
+    }
   }
 
-  img{
-    width: 85%;
-  }
 }

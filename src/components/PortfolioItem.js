@@ -19,8 +19,10 @@ const PortfolioItem = () => {
     <main className="PortfolioItem">
       <article className="project">
         <h1>{project.title}</h1>
-        <img src={imageArray[id - 1]} alt={project.title} />
-        <ul className="features">
+        <a href={project.live_url} target="blank">
+          <img src={imageArray[id - 1]} alt={project.title} />
+        </a>
+        <ul className="project-features">
           {project.features.map((feature, idx) => {
             return <li key={idx}>{feature}</li>
           })}
