@@ -9,13 +9,39 @@
     height: calc(100vh - 100px);
   }
 
+  .back {
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+    cursor: pointer;
+    @include mx.flexCenter;
+    &:hover {
+      color: #aa2626;
+      text-shadow: none;
+    }
+    
+    i {
+      color: #aa2626;
+      font-size: 4rem;
+    }
+
+    p {
+      margin-inline-start: -.5rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+
   .project {
     width: 85%;
     max-width: 80rem;
     margin-inline: auto;
 
     h1 {
-      padding-block: 5rem;
+      padding-block: 10rem 5rem;
+      @include mx.mq(768px) {
+        padding-block: 5rem;
+      }
     }
 
     &-anchor-content {

@@ -1,10 +1,11 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import PortfolioData from "../data/portfolioData.json"
 import img1 from '../images/SplitterAppScreenShot.png'
 import img2 from '../images/TeamStatTrackerApp ScreenShot 2022-02-08.png'
 import img3 from '../images/Shortly Screenshot 2022-02-08.png'
 import img4 from '../images/Spinner-ScreenShot.png'
 import img5 from '../images/crowdfund-fem-screenshot.png'
+import 'remixicon/fonts/remixicon.css'
 import '../scss/_PortfolioItem.scss'
 
 const PortfolioItem = () => {
@@ -17,6 +18,15 @@ const PortfolioItem = () => {
 
   return (
     <main className="PortfolioItem">
+      <Link className="back"
+        to={`/portfolio`}
+      >
+        <i className="ri-arrow-drop-left-fill"></i>
+        <p>
+          Back to Portfolio
+        </p>
+        {/* <i className="ri-arrow-left-s-fill"></i> */}
+      </Link>
       <article className="project">
         <h1>{project.title}</h1>
           <div className="project-anchor-content">

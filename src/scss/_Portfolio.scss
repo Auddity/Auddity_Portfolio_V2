@@ -3,7 +3,6 @@
 @use './functions' as f;
 
 .Portfolio {
-  // position: relative;
   height: 100%;
   padding-block-end: 2rem;
   
@@ -35,7 +34,9 @@
       height: 100%;
 
       &:last-child {
-        transform: translateX(50%);
+        @include mx.mq(768px) {
+          transform: translateX(50%);
+        }
       }
 
       &:hover {
