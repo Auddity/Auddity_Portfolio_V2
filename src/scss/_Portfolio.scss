@@ -35,10 +35,7 @@
       height: 100%;
 
       &:last-child {
-        @include mx.mq(768px) {
-          grid-column: 1 / -1;
-        }
-
+        transform: translateX(50%);
       }
 
       &:hover {
