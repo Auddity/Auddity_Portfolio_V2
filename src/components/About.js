@@ -15,12 +15,18 @@ const About = () => {
         </div>
         <p>My name is James Bretz and for the past two years I've been teaching myself front end development on a part-time basis.  I'm eager for full-time opportunities to apply my skills and grow my knowledge of front end development. Thank you for visiting my website and feel free to contact me.</p>
       </div>
-      <Link to={'/contact'}>
-        <i className='ri-send-plane-fill'></i>
-        <span>
-          Get in touch  
-        </span>
-      </Link>
+
+      <div className="About-contact-animation-container">
+        <Link to={'/contact'}>
+          <div className="route">
+            <i className='ri-send-plane-fill plane'></i>
+          </div>
+          <p>
+            Get in touch  
+          </p>
+        </Link>
+      </div>
+      
     </main>
   )
 }
