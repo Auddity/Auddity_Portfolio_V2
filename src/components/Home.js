@@ -4,10 +4,10 @@ import logo from '../images/Auddity Logo 2013.png'
 const Home = () => {
   return (
     <main className="Hero">
-      <div className="Hero-logo-ctnr">
+      <div className="Hero-logo-container">
         <img src={logo} alt="Auddity Logo" />
       </div>
-      <div className="Hero-info-ctnr">
+      <div className="Hero-info-container">
         <h1>Front End Develompent</h1>
         <div className="tech-list">
           <p>Html</p>

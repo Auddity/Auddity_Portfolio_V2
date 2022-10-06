@@ -1,14 +1,12 @@
-@use './variables' as v;
-@use './mixins' as mx;
-@use './functions' as f;
+@use './mixins' as mx; 
 
-.Hero {
+.About {
   @include mx.flexStart;
   flex-direction: column;
   height: calc(100vh - 80px);
-  padding-block-start: 11rem;
+  padding-block-start: 5rem;
   @include mx.mq(1024px) {
-    height: calc(100vh - 100px)
+    height: calc(100vh - 100px);
   }
 
   &-logo-container {
@@ -30,23 +28,18 @@
   }
 
   &-info-container {
-    margin-block-start: 2.5rem;
+    @include mx.flexCenter;
+    width: 80%;
 
-    h1 {
-      font-size: 2.8rem;
+    img {
+      height: 30rem;
+      width: 30rem;
+      border-radius: 50%;
     }
 
-    .tech-list {
-      @include mx.flexAround;
-      flex-wrap: wrap;
-      width: 75%;
-      line-height: 3;
-      margin-inline: auto;
-      margin-block-start: 2.5rem;
-
-      p {
-        margin-inline: 2rem;
-      }
+    p {
+      padding-inline: 7rem;
+      line-height: 2;
     }
   }
 }

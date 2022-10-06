@@ -6,7 +6,7 @@
       "built_with": "React, CSS",
       "desc": "Users can enter the bill total, select a preset or custom percentage to tip, and enter the number of people in the dinning party.",
       "features": [
-        "State is controlled by useReducer.",
+        "State is controlled by useReducer",
         "Uses controlled input compenents",
         "Conditional rendering of elements and styles based on state",
         "Mobile first approach" 

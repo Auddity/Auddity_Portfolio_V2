@@ -2,7 +2,6 @@
 @use 'mixins' as mx;
 
 .PortfolioItem {
-  position: relative;
   height: calc(100vh - 80px);
 
   @include mx.mq(1024px) {
