@@ -5,7 +5,6 @@
   @include mx.flexStart;
   flex-direction: column;
   height: calc(100vh - 80px);
-  // height: 100%;
   @include mx.mq(768px) {
     padding-block-start: 5rem;
   }
@@ -78,10 +77,10 @@
       
       &:hover {
         .route {
-          animation: orbit 4s infinite linear;
+          animation: orbit 2s infinite linear;
 
           .plane {
-            animation: correctScale 4s infinite linear;
+            animation: correctScale 2s infinite linear;
           }
         }
       }
