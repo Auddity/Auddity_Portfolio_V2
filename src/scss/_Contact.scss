@@ -1,0 +1,9 @@
+@use './mixins' as mx;
+
+.Contact {
+  height: calc(100vh - 80px);
+
+  @include mx.mq(1024px) {
+    height: calc(100vh - 100px);
+  }
+}
