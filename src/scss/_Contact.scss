@@ -1,3 +1,4 @@
+@use './variables' as v;
 @use './mixins' as mx;
 
 .Contact {
@@ -37,14 +38,28 @@
         &[name="message"] {
           height: 12rem;
         }
+
+        &:focus {
+          border: 1px solid v.$inputFocus; 
+          box-shadow: v.$boxShadow;
+          outline: none;
+        }
       }
 
       button {
         width: 100%;
         font-family: inherit;
         padding-block: 1rem;
+        border: none;
         border-radius: 1.2rem;
         cursor: pointer;
+
+        &:hover {
+          background-color: v.$inputFocus;
+          box-shadow: v.$boxShadow;
+        }
+
+        
       }
     }
     
