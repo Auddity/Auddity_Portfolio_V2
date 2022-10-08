@@ -6,4 +6,47 @@
   @include mx.mq(1024px) {
     height: calc(100vh - 100px);
   }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-block: 5rem;
+  }
+
+  form {
+    width: 80%;
+    margin-inline: auto;
+
+    .form-control {
+      width: 80%;
+      margin-inline: auto;
+
+      .label {
+        position: absolute;
+        transform: translateX(-10000px);
+      }
+
+      .input {
+        width: 100%;
+        font-family: inherit;
+        padding-block: 1rem;
+        padding-inline-start: 1rem;
+        border-radius: 1.2rem;
+        margin-block: 2.5rem;
+        border: none;
+
+        &[name="message"] {
+          height: 12rem;
+        }
+      }
+
+      button {
+        width: 100%;
+        font-family: inherit;
+        padding-block: 1rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+      }
+    }
+    
+  }
 }

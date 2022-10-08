@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../scss/_Contact.scss';
 
 const Contact = () => {
   const [input, setInput] = useState({
@@ -43,13 +44,15 @@ const Contact = () => {
     }
   }
 
-  console.log(input);
+  const handleSubmit = e => {
+    e.preventDefault();
+  }
 
   return (
     <main className="Contact">
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="form-control">
             <label 
               htmlFor="name"
@@ -57,7 +60,7 @@ const Contact = () => {
             >Enter Name</label>
             <input 
               type="text" 
-              className="name"
+              className="input"
               id="name" 
               name="name"
               value={input.name}
@@ -72,7 +75,7 @@ const Contact = () => {
             >Enter Email Address</label>
             <input 
               type="text" 
-              className="email" 
+              className="input" 
               id="email" 
               name="email"
               value={input.email}
@@ -86,11 +89,15 @@ const Contact = () => {
             >Enter a Brief Message</label>
             <textarea 
               id="message" 
-              className="message" name="message" 
+              className="input" 
+              name="message" 
               value={input.message}
               onChange={handleInput}
               onFocus={handleFocus}
               onBlur={handleBlur} ></textarea>
+          </div>
+          <div className="form-control">
+            <button type="submit">Send</button>
           </div>
         </form>
       </div>
