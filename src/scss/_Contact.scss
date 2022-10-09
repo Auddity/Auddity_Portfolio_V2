@@ -49,7 +49,7 @@
         }
 
         &:focus {
-          border: 1px solid v.$inputFocus; 
+          border: 1px solid v.$neonBlue; 
           box-shadow: v.$boxShadow;
           outline: none;
         }
@@ -64,7 +64,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: v.$inputFocus;
+          background-color: v.$neonBlue;
           box-shadow: v.$boxShadow;
         }
 
