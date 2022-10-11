@@ -18,7 +18,6 @@ const Contact = () => {
   }
 
   const handleFocus = e => {
-    
     setInput(prev => {
       return {
         ...prev,
@@ -44,15 +43,24 @@ const Contact = () => {
     }
   }
 
+  const handleSubmit = e => {
+    fetch('/', {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: { "form-name": "contact", ...input }
+    })
+      .then(() => alert("Success!"))
+      .catch(err => alert(err));
+
+      e.preventDefault();
+  }
+
   return (
     <main className="Contact">
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
-        <form 
-          name="contact"
-          method="post"
-           >
-            <input type="hidden" name="subject" value="Contact from Portfolio Site" />
+        <form  onSubmit={handleSubmit}>
+            {/* <input type="hidden" name="contact" value="Contact from Portfolio Site" /> */}
             <p className="hidden">
               <label>Don't fill this out if you're human:
                 <input name="bot-field" />
