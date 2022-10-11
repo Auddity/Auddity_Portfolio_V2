@@ -52,7 +52,9 @@ const Contact = () => {
       .then(() => alert("Success!"))
       .catch(err => alert(err));
 
-      e.preventDefault();
+    e.preventDefault();
+    console.log(input);
+    handleFocus();
   }
 
   return (
