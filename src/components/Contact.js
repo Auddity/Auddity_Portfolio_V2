@@ -50,9 +50,7 @@ const Contact = () => {
         <h1>Please Get in Touch</h1>
         <form 
           name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          method="post"
            >
             <input type="hidden" name="subject" value="Contact from Portfolio Site" />
             <p className="hidden">
