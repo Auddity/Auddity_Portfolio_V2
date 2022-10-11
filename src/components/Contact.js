@@ -43,18 +43,22 @@ const Contact = () => {
     }
   }
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&")
+  }
+
   const handleSubmit = e => {
-    fetch('/', {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: { "form-name": "contact", ...input }
+      body: encode({ "form-name": "contact", ...input })
     })
       .then(() => alert("Success!"))
       .catch(err => alert(err));
 
     e.preventDefault();
     console.log(input);
-    handleFocus();
   }
 
   return (
@@ -62,7 +66,7 @@ const Contact = () => {
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
         <form  onSubmit={handleSubmit}>
-            {/* <input type="hidden" name="contact" value="Contact from Portfolio Site" /> */}
+            <input type="hidden" name="contact" value="Contact from Portfolio Site" />
             <p className="hidden">
               <label>Don't fill this out if you're human:
                 <input name="bot-field" />
