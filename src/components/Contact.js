@@ -44,10 +44,6 @@ const Contact = () => {
     }
   }
 
-  const handleSubmit = e => {
-    e.preventDefault();
-  }
-
   return (
     <main className="Contact">
       <div className="Contact-form-container">
@@ -56,7 +52,13 @@ const Contact = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          onSubmit={handleSubmit} >
+          netlify-honeypot="bot-field"
+           >
+            <p className="hidden">
+              <label>Don't fill this out if you're human:
+                <input name="bot-field" />
+              </label>
+            </p>
           <div className="form-control">
             <label 
               htmlFor="name"
