@@ -54,6 +54,7 @@ const Contact = () => {
           data-netlify="true"
           netlify-honeypot="bot-field"
            >
+            <input type="hidden" name="subject" value="Contact from Portfolio Site" />
             <p className="hidden">
               <label>Don't fill this out if you're human:
                 <input name="bot-field" />
@@ -69,6 +70,7 @@ const Contact = () => {
               className="input"
               id="name" 
               name="name"
+              required
               value={input.name}
               onChange={handleInput}
               onFocus={handleFocus}
@@ -80,10 +82,11 @@ const Contact = () => {
               className="label"
             >Enter Email Address</label>
             <input 
-              type="text" 
+              type="email" 
               className="input" 
               id="email" 
               name="email"
+              required
               value={input.email}
               onChange={handleInput}
               onFocus={handleFocus}
@@ -97,6 +100,7 @@ const Contact = () => {
               id="message" 
               className="input" 
               name="message" 
+              required
               value={input.message}
               onChange={handleInput}
               onFocus={handleFocus}
