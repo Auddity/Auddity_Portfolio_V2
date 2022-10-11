@@ -63,12 +63,12 @@
         border-radius: 1.2rem;
         cursor: pointer;
 
-        &:hover {
+        &:hover, &:focus {
+          border: 1px solid v.$neonBlue; 
           background-color: v.$neonBlue;
           box-shadow: v.$boxShadow;
+          outline: none;
         }
-
-        
       }
     }
     
