@@ -52,7 +52,11 @@ const Contact = () => {
     <main className="Contact">
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
-        <form onSubmit={handleSubmit}>
+        <form 
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={handleSubmit} >
           <div className="form-control">
             <label 
               htmlFor="name"
