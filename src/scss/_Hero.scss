@@ -6,12 +6,12 @@
   @include mx.flexStart;
   flex-direction: column;
   height: calc(100vh - 80px);
-  padding-block-start: 11rem;
   @include mx.mq(1024px) {
     height: calc(100vh - 100px)
   }
-
+  
   &-logo-container {
+    padding-block-start: 11rem;
     max-width: 70.5rem;
     
     @include mx.mq(768px) {

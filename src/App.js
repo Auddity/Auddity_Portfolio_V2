@@ -7,6 +7,7 @@ import PortfolioItem from './components/PortfolioItem';
 import About from './components/About';
 import Contact from './components/Contact';
 import Missing from './components/Missing';
+import ContactSuccess from './components/ContactSuccess';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </Route>
         <Route path="about" element={<About /> } />
         <Route path="contact" element={<Contact /> } />
+        <Route path="success" element={<ContactSuccess />} />
         <Route path="*" element={<Missing /> } />
       </Route>
     </Routes>

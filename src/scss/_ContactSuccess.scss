@@ -1,0 +1,51 @@
+@use './mixins' as mx;
+
+.ContactSuccess {
+  height: calc(100vh - 80px);
+
+  @include mx.mq(1024px) {
+    height: calc(100vh - 100px);
+  }
+
+  .logo-container {
+    max-width: 70.5rem;
+    margin-inline: auto;
+    padding-block-start: 11rem;
+    
+    @include mx.mq(768px) {
+      width: 70%;
+    }
+    @include mx.mq(1024px) {
+      width: 50%;
+    }
+
+    img {
+      padding-inline-start: 2rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info-container {
+    margin-block-start: 2.5rem;
+
+    h1 {
+      padding-block-end: 2rem;
+    }
+
+    .link-container {
+      padding-block-start: 2rem;
+      a {
+        font-size: 2rem;
+      }
+      a:first-child {
+        margin-inline-end: 2rem;
+      }
+
+      p {
+        padding-block: 2rem;
+      }
+    }
+  }
+}

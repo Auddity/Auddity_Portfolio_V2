@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import '../scss/_Contact.scss';
 
 const Contact = () => {
@@ -7,6 +8,7 @@ const Contact = () => {
     email: 'Email',
     message: 'Message'
   })
+  const navigate = useNavigate();
 
   const handleInput = e => {
     setInput(prev => {
@@ -54,18 +56,19 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...input })
     })
-      .then(() => alert("Success!"))
+      .then(navigate('/success'))
       .catch(err => alert(err));
 
     e.preventDefault();
-    console.log(input);
+    
+    
   }
 
   return (
     <main className="Contact">
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
-        <form  onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <input type="hidden" name="contact" value="Contact from Portfolio Site" />
             <p className="hidden">
               <label>Don't fill this out if you're human:
