@@ -57,11 +57,10 @@ const Contact = () => {
       body: encode({ "form-name": "contact", ...input })
     })
       .then(navigate('/success'))
+      // TODO: create an error page
       .catch(err => alert(err));
 
     e.preventDefault();
-    
-    
   }
 
   return (
