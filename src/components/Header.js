@@ -1,4 +1,4 @@
-import '../scss/Header.scss'
+import '../scss/_Header.scss'
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 

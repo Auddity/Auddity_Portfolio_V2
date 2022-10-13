@@ -1,4 +1,3 @@
-import './scss/App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout'
 import Home from './components/Home';
@@ -20,11 +19,13 @@ function App() {
           <Route path=":id" element={<PortfolioItem />} />
         </Route>
         <Route path="about" element={<About /> } />
-        <Route path="contact" element={<Contact /> } />
-        <Route path="success" element={<ContactSuccess />} />
-        <Route path="error" element={<ContactError />} />
-        {/* TODO: Create Error component for contact */}
+        <Route path="contact" >
+          <Route index element={<Contact /> } />
+          <Route path="success" element={<ContactSuccess />} />
+          <Route path="error" element={<ContactError />} />
+        </Route>
         <Route path="*" element={<Missing /> } />
+        {/* TODO: Footer Component */}
       </Route>
     </Routes>
   );

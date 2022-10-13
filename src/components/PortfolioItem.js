@@ -15,7 +15,6 @@ const PortfolioItem = () => {
   const getProject = (id) => portData.find(item => item.id === +id)
   const project = getProject(id);
  
-
   return (
     <main className="PortfolioItem">
       <Link className="back"
@@ -25,7 +24,6 @@ const PortfolioItem = () => {
         <p>
           Back to Portfolio
         </p>
-        {/* <i className="ri-arrow-left-s-fill"></i> */}
       </Link>
       <article className="project">
         <h1>{project.title}</h1>

@@ -56,11 +56,10 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...input })
     })
-      .then(navigate('/success'))
-      // TODO: create an error page
+      .then(navigate(`success`))
       .catch(err => {
-        console.log(err)
-        navigate('/error');
+        console.log(err);
+        navigate(`error`)
       });
 
     e.preventDefault();
