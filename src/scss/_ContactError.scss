@@ -1,0 +1,22 @@
+@use './mixins' as mx;
+
+.ContactError {
+ 
+  display: grid;
+  align-content: center;
+  height: calc(100vh - 80px);
+  
+  @include mx.mq(1024px) {
+    height: calc(100vh - 100px);
+  }
+
+  .container {
+    p:nth-child(2) {
+      padding-block: 8rem;
+    }
+
+    a {
+      font-size: 2.8rem;
+    }
+  }
+}

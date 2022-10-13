@@ -58,7 +58,10 @@ const Contact = () => {
     })
       .then(navigate('/success'))
       // TODO: create an error page
-      .catch(err => alert(err));
+      .catch(err => {
+        console.log(err)
+        navigate('/error');
+      });
 
     e.preventDefault();
   }

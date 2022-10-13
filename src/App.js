@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Missing from './components/Missing';
 import ContactSuccess from './components/ContactSuccess';
+import ContactError from './components/ContactError';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route path="about" element={<About /> } />
         <Route path="contact" element={<Contact /> } />
         <Route path="success" element={<ContactSuccess />} />
-        {/* TODO: Create Error compoenent for contact */}
+        <Route path="error" element={<ContactError />} />
+        {/* TODO: Create Error component for contact */}
         <Route path="*" element={<Missing /> } />
       </Route>
     </Routes>
