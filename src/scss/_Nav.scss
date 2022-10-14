@@ -9,6 +9,7 @@
     cursor: pointer;
   }
 
+  
   .link-container {
     a {
       @include mx.mq(768px) {
@@ -40,6 +41,7 @@
         padding-block: 1rem;
         font-size: 1.9rem;
         letter-spacing: 1.5px;
+        
       }
     }
   }

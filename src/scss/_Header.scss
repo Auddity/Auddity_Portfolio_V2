@@ -16,5 +16,8 @@
     @include mx.flexSpaceBetween;
     max-width: 120rem;
     margin-inline: auto;
+    @include mx.mq(1024px) {
+      font-size: 2rem;
+    }
   }
 }

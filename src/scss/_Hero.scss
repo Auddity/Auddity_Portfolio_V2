@@ -9,6 +9,7 @@
   @include mx.mq(1024px) {
     height: calc(100vh - 100px)
   }
+  background-color: transparent;
   
   &-logo-container {
     padding-block-start: 11rem;
