@@ -5,13 +5,14 @@ import img2 from '../images/TeamStatTrackerApp ScreenShot 2022-02-08.png'
 import img3 from '../images/Shortly Screenshot 2022-02-08.png'
 import img4 from '../images/Spinner-ScreenShot.png'
 import img5 from '../images/crowdfund-fem-screenshot.png'
+import img6 from '../images/CountdownTimerSC.png'
 import 'remixicon/fonts/remixicon.css'
 import '../scss/_PortfolioItem.scss'
 
 const PortfolioItem = () => {
   const { id } = useParams();
   const portData = PortfolioData.projects;
-  const imageArray = [img1, img2, img3, img4, img5];
+  const imageArray = [img1, img2, img3, img4, img5, img6];
   const getProject = (id) => portData.find(item => item.id === +id)
   const project = getProject(id);
  

@@ -62,6 +62,19 @@
         "After each pledge a status display will be updated.  It Also has a status bar which will update"
       ],
       "live_url": "https://fem-crowdfund-beige.vercel.app/"
+    },
+    {
+      "id": 6,
+      "title": "Countdown Timer App",
+      "built_with": "Vanilla JavaScript, CSS, HTML",
+      "desc": "A small app that counts down an inputed time, then sends a notification to the users system when time is up",
+      "features": [
+        "Utilizes the notifications API to alert the user on their system when time has expired",
+        "Uses 'beforeunload' listener to notify they may loose the current running timer if they refresh or leave the page",
+        "Has a light and dark mode",
+        "Respective UI buttons only appear when applicable"
+      ],
+      "live_url": "https://countdown-timer-six-pink.vercel.app/"
     }
   ]
 }
