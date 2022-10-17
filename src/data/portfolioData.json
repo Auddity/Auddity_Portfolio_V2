@@ -67,7 +67,7 @@
       "id": 6,
       "title": "Countdown Timer App",
       "built_with": "Vanilla JavaScript, CSS, HTML",
-      "desc": "A small app that counts down an inputed time, then sends a notification to the users system when time is up",
+      "desc": "A timer app then sends a notification to the users system when time is up",
       "features": [
         "Utilizes the notifications API to alert the user on their system when time has expired",
         "Uses 'beforeunload' listener to notify they may loose the current running timer if they refresh or leave the page",

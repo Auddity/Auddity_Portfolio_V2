@@ -32,6 +32,7 @@
   &-info-container {
     @include mx.flexCenter;
     max-width: 90rem;
+    padding-block-start: 3rem;
     @include mx.mq(768px) {
       padding-block: 3rem 0;
       width: 80%;
@@ -45,7 +46,7 @@
     }
 
     p {
-      padding-inline: 7rem;
+      padding-inline: 3rem;
       line-height: 2;
     }
   }
