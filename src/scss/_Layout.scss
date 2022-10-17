@@ -29,22 +29,26 @@
       content: '';
       position: absolute;
       inset: 0;
-      width: 2px;
+      width: .3rem;
       height: 50rem;
-      box-shadow: 0 0 8px hsla(0, 100%, 50%, 0.35);
+      box-shadow: 3px 0 8px hsla(0, 100%, 50%, 0.35);
+      @include mx.mq(1024px) {
+        width: .2rem;
+        box-shadow: 0 0 8px hsla(0, 100%, 50%, 0.35)
+      }
     }
   }
 
   .left-bar {
     height: 100%;
-    width: .2rem;
-    // transform: translateX(2px);
+    width: .3rem;
     &:before {
       background-image: v.$lineGradient-down;
       animation: vertMoveDown 20s linear infinite;
     }
     @include mx.mq(1024px) {
       left: 25%;
+      width: .2rem;
     }
   }
   .right-bar {
@@ -53,7 +57,6 @@
     &:before {
       top: 100%;
       background-image: v.$lineGradient-up;
-      // transform: translateX(-2px);
       animation: vertMoveUp 20s linear infinite;
     }
     @include mx.mq(1024px) {

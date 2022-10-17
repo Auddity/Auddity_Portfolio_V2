@@ -1,13 +1,17 @@
 import { Outlet } from 'react-router-dom';
+import useWindowSize from '../hooks/useWindowSize';
 import '../scss/_Layout.scss';
 import Header from './Header';
 import Footer from './Footer'
 
 const Layout = () => {
+  const { width } = useWindowSize();
   return (
     <div className='Layout'>
       <div className="left-bar"></div>
-      <div className="right-bar"></div>
+      {width > 810 && 
+        <div className="right-bar"></div>
+      }
 
       <Header />
       <Outlet />
