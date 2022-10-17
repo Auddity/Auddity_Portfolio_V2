@@ -74,7 +74,7 @@
             align-self: center;
             line-height: 1.5;
 
-            @include mx.mqh(361px) {
+            @include mx.mq(361px) {
               line-height: 2;
             }
           }
@@ -104,7 +104,7 @@
           line-height: 1.2;
           padding-block: 1rem;
 
-          @include mx.mqh(361px) {
+          @include mx.mq(361px) {
             line-height: 1.4;
           }
 
