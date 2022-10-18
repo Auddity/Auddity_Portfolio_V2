@@ -1,4 +1,6 @@
 import { useParams, Link } from "react-router-dom"
+import { useSize } from 'react-hook-size'
+import { useRef } from 'react'
 import PortfolioData from "../data/portfolioData.json"
 import img1 from '../images/SplitterAppScreenShot.png'
 import img2 from '../images/TeamStatTrackerApp ScreenShot 2022-02-08.png'
@@ -11,13 +13,22 @@ import '../scss/_PortfolioItem.scss'
 
 const PortfolioItem = () => {
   const { id } = useParams();
+  const ref = useRef();
+  let { height } = useSize(ref);
   const portData = PortfolioData.projects;
   const imageArray = [img1, img2, img3, img4, img5, img6];
   const getProject = (id) => portData.find(item => item.id === +id)
   const project = getProject(id);
+  const styles = {
+    height: height > 320 ? 'auto' : null
+  }
+
+  console.log(height);
  
   return (
-    <main className="PortfolioItem">
+    <main className="PortfolioItem"
+      style={styles} 
+    >
       <Link className="back"
         to={`/portfolio`}
       >
@@ -37,7 +48,7 @@ const PortfolioItem = () => {
             <div className="overlay-bg"></div>
         </a>
           </div>
-        <ul className="project-features">
+        <ul className="project-features" ref={ref}>
           {project.features.map((feature, idx) => {
             return <li key={idx}>{feature}</li>
           })}
