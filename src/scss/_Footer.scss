@@ -1,2 +1,53 @@
 @use 'variables' as v;
 @use 'mixins' as mx;
+@use 'functions' as f;
+
+.Footer {
+  position: relative;
+  padding-block: 1.5rem;
+  background-color: v.$neonBlueOpaque;
+  box-shadow:  v.$neonBlueBoxShadow;
+  z-index: 10;
+  
+  .links-container {
+    padding-block-end: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-inline: auto;
+
+    a {
+      .icon {
+        display: inline-block;
+        font-size: 2rem;
+      }
+
+      &:hover {
+        color:v.$altHoverColor;
+      }
+    }
+  }
+
+  &-tab {
+    position: absolute;
+    right: -40px;
+    top: -8rem;
+    height: 8rem;
+    width: 8rem;
+    background-color: v.$neonBlueOpaque;
+    box-shadow: v.$neonBlueBoxShadow;
+    z-index: 12;
+    display: grid;
+    align-content: center;
+    transform: skew(-45deg) ;
+    cursor: pointer;
+    // &:hover {
+    //   transform: scale(1.1) skew(-45deg);
+    // }
+
+    .arrow {
+      font-size: 3.1rem;
+      color: v.$altHoverColor;
+    }
+  }
+}

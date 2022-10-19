@@ -4,7 +4,7 @@ import logo from '../images/Auddity Logo 2013.png'
 
 const ContactSuccess = () => {
   return (
-    <main className="ContactSuccess">
+    <main className="ContactSuccess height-adjust">
       <div className="logo-container">
         <img src={logo} alt="Auddity Logo" />
       </div>

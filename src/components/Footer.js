@@ -1,33 +1,56 @@
+import { useState } from 'react'
 import '../scss/_Footer.scss'
 import { FaGithub, FaLinkedin, FaCodepen, FaMedium, FaImdb } from 'react-icons/fa'
+// import { TiLocationArrowOutline } from 'react-icons/ti'
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
 
+  const [showTab, setShowTab] = useState(false);
+  const handleClick = () => {
+    setShowTab(prev => !prev);
+  }
+
+  const footerStyles = {
+    transform: showTab ? "translateY(0)" : "translateY(100%)"
+  }
+  // const arrowStyles = {
+  //   transform: showTab ? "rotate(135deg)" : "rotate(-90deg)"
+  // }
+  // const tabStyles = {
+  //   transform: showTab ? "translateY(70%) rotate(45deg)" : null
+  // }
+
   return (
-    <footer className="Footer">
+    <footer className="Footer main"
+    style={footerStyles}>
       <div className="Footer-container">
         <div className="links-container">
-          <a href="https://github.com/Auddity">
-            <FaGithub />
+          <a href="https://github.com/Auddity" className='icon-anchor'>
+            <FaGithub className="icon" />
           </a>
           <a href="https://www.linkedin.com/in/james-bretz-b80242180/">
-            <FaLinkedin />
+            <FaLinkedin className="icon" />
           </a>
           <a href="https://codepen.io/Auddity">
-            <FaCodepen />
+            <FaCodepen className="icon" />
           </a>
           <a href="https://medium.com/@jay.auddity">
-            <FaMedium />
+            <FaMedium className="icon" />
           </a>
           <a href="https://www.imdb.com/name/nm5652671/">
-            <FaImdb />
+            <FaImdb className="icon" />
           </a>
         </div>
         <div className="copy-write-container">
           <p>copyright Auddity &copy; {year}</p>
         </div>
+      </div>
+      <div className="Footer-tab" onClick={handleClick} >
+        {/* <TiLocationArrowOutline className='arrow' 
+        style={arrowStyles}
+        /> */}
       </div>
     </footer>
   )

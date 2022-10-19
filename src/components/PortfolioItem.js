@@ -24,7 +24,7 @@ const PortfolioItem = () => {
   }
  
   return (
-    <main className="PortfolioItem"
+    <main className="PortfolioItem height-adjust"
       style={styles} 
     >
       <Link className="back"

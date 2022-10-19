@@ -3,7 +3,7 @@ import logo from '../images/Auddity Logo 2013.png'
 
 const Home = () => {
   return (
-    <main className="Hero">
+    <main className="Hero height-adjust">
       <div className="Hero-logo-container">
         <img src={logo} alt="Auddity Logo" />
       </div>

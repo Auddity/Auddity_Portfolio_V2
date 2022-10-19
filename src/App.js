@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Missing from './components/Missing';
 import ContactSuccess from './components/ContactSuccess';
 import ContactError from './components/ContactError';
+import './scss/_App.scss';
 
 function App() {
   return (

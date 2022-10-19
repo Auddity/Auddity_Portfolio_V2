@@ -9,7 +9,7 @@ const About = () => {
   const { width } = useWindowSize();
 
   return (
-    <main className="About">
+    <main className="About height-adjust">
       <div className="About-logo-container">
         <img src={logo} alt="Auddity Logo" />
       </div>

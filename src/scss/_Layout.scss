@@ -6,6 +6,7 @@
   width: 100%;
   text-align: center;
   background-image: v.$backgroundGradient;
+  overflow: hidden;
   
   &::before {
     content: '';

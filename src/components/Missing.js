@@ -3,7 +3,7 @@ import '../scss/_Missing.scss'
 
 const Missing = () => {
   return (
-    <main className="Missing">
+    <main className="Missing height-adjust">
       <div className="container">
         <h1>Non esset</h1>
         <p>Sorry, something is wrong and the page does not exist.</p>

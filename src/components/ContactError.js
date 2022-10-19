@@ -2,7 +2,7 @@ import '../scss/_ContactError.scss'
 
 const ContactError = () => {
   return (
-    <main className="ContactError">
+    <main className="ContactError height-adjust">
       <div className="container">
         <p>Sorry, there has been an error in sending a message</p>
         <p>You can try contacting me through my old sound design site</p>

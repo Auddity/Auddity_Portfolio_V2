@@ -66,7 +66,7 @@ const Contact = () => {
   }
 
   return (
-    <main className="Contact">
+    <main className="Contact height-adjust">
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
         <form onSubmit={handleSubmit}>

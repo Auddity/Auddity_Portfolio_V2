@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import useWindowSize from '../hooks/useWindowSize';
 import '../scss/_Layout.scss';
 import Header from './Header';
-// import Footer from './Footer'
+import Footer from './Footer'
 
 const Layout = () => {
   const { width } = useWindowSize();
@@ -15,7 +15,7 @@ const Layout = () => {
       
       <Header />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
