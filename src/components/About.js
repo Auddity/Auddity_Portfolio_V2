@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { RiSendPlaneFill } from 'react-icons/ri'
 import useWindowSize from '../hooks/useWindowSize';
 import '../scss/_About.scss';
 import logo from '../images/Auddity Logo 2013.png'
@@ -24,7 +25,7 @@ const About = () => {
       <div className="About-contact-animation-container">
         <Link to={'/contact'}>
           <div className="route">
-            <i className='ri-send-plane-fill plane'></i>
+            <RiSendPlaneFill className='plane' />
           </div>
           <p>
             Get in touch  

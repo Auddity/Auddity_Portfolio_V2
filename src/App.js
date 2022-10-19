@@ -25,7 +25,6 @@ function App() {
           <Route path="error" element={<ContactError />} />
         </Route>
         <Route path="*" element={<Missing /> } />
-        {/* TODO: Footer Component */}
       </Route>
     </Routes>
   );

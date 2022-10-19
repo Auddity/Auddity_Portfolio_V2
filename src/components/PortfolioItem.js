@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom"
 import { useSize } from 'react-hook-size'
 import { useRef } from 'react'
+import { RiArrowLeftSFill } from 'react-icons/ri'
 import PortfolioData from "../data/portfolioData.json"
 import img1 from '../images/SplitterAppScreenShot.png'
 import img2 from '../images/TeamStatTrackerApp ScreenShot 2022-02-08.png'
@@ -8,7 +9,6 @@ import img3 from '../images/Shortly Screenshot 2022-02-08.png'
 import img4 from '../images/Spinner-ScreenShot.png'
 import img5 from '../images/crowdfund-fem-screenshot.png'
 import img6 from '../images/CountdownTimerSC.png'
-import 'remixicon/fonts/remixicon.css'
 import '../scss/_PortfolioItem.scss'
 
 const PortfolioItem = () => {
@@ -22,8 +22,6 @@ const PortfolioItem = () => {
   const styles = {
     height: height > 320 ? 'auto' : null
   }
-
-  console.log(height);
  
   return (
     <main className="PortfolioItem"
@@ -32,7 +30,7 @@ const PortfolioItem = () => {
       <Link className="back"
         to={`/portfolio`}
       >
-        <i className="ri-arrow-drop-left-fill"></i>
+        <RiArrowLeftSFill className="icon" />
         <p>
           Back to Portfolio
         </p>

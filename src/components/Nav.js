@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
-import 'remixicon/fonts/remixicon.css'
+import { FaBars } from 'react-icons/fa';
 import '../scss/_Nav.scss'
 
 const Nav = () => {
@@ -22,7 +22,7 @@ const Nav = () => {
         style={open ? rotateBars : null}
         onClick={handleMenu}
         >
-          <i className="ri-menu-line" ></i>
+          <FaBars />
         </div>
       }
       
