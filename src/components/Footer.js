@@ -7,17 +7,26 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
 
-  const [showTab, setShowTab] = useState(false);
+  const [showFooter, setShowFooter] = useState(false);
   const handleClick = () => {
-    setShowTab(prev => !prev);
+    setShowFooter(prev => !prev);
   }
 
   const footerStyles = {
-    transform: showTab ? "translateY(0)" : "translateY(100%)"
+    transform: showFooter ? "translateY(0)" : "translateY(100%)",
+    boxShadow: showFooter ? "0 0 1rem hsl(199, 100%, 50%)": "-81px 0 1.5rem hsl(199, 100%, 50%)"
   }
+
+  const tabStyles = {
+    transform: showFooter ? "skew(0)" : "skew(-45deg)",
+    right: showFooter ? "-93px" : "-40px"
+    // top: showFooter ? "-164px" : "-80px"
+  }
+
   const arrowStyles = {
-    transform: showTab ? "rotate(135deg)" : "rotate(-45deg)",
-    top: showTab ? "2rem" : "-4rem"
+    transform: showFooter ? "rotate(135deg)" : "rotate(-45deg)",
+    top: showFooter ? "2rem" : "-4rem",
+    right: showFooter ? "4rem" : "1rem"
   }
 
   return (
@@ -45,16 +54,10 @@ const Footer = () => {
           <p>copyright Auddity &copy; {year}</p>
         </div>
       </div>
-      {/* <div className="Footer-showBtn-container"> */}
-        {!showTab && 
-          <div className="Footer-tab" onClick={handleClick} >
-
-          </div>
-        }
-        <TiLocationArrowOutline className='arrow' 
-        style={arrowStyles} onClick={handleClick}
-        />
-      {/* </div> */}
+      <div className="Footer-tab" onClick={handleClick} style={tabStyles}></div>
+      <TiLocationArrowOutline className='arrow' 
+      style={arrowStyles} onClick={handleClick}
+      />
     </footer>
   )
 }

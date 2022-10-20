@@ -6,8 +6,8 @@
   position: relative;
   background-color: v.$neonBlueOpaque;
   padding-block: 1.5rem;
-  box-shadow:  v.$neonBlueBoxShadow;
   z-index: 10;
+  transition: all 1s ease;
   
   .links-container {
     padding-block-end: 1rem;
@@ -18,38 +18,41 @@
     margin-inline: auto;
 
     a {
+      // transition: scale 1s ease;
       .icon {
         display: inline-block;
         font-size: 2rem;
+        z-index: 15;
       }
 
       &:hover {
         color:v.$altHoverColor;
+        transform: scale(1.6);
+        transition: scale 1s ease;
       }
     }
   }
 
   &-tab {
     position: absolute;
-    right: -40px;
-    top: -8rem;
+    top: -8.02rem;
     height: 8rem;
     width: 8rem;
     background-color: v.$neonBlueOpaque;
-    box-shadow: v.$neonBlueBoxShadow;
-    z-index: 12;
-    display: grid;
-    align-content: center;
-    transform: skew(-45deg) ;
+    box-shadow: -5.5px -9.5px 1.5rem hsl(199, 100%, 50%);
+    z-index: 11;
     cursor: pointer;
+    transition: all 1s ease;
+    overflow: hidden;
   }
   
   .arrow {
     position: absolute;
-    top: -4rem;
-    right: 1rem;
     font-size: 3.1rem;
     color: v.$altHoverColor;
     cursor: pointer;
+    transition: all 1s ease;
+
+
   }
 }
