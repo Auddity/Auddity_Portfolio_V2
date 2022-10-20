@@ -4,8 +4,8 @@
 
 .Footer {
   position: relative;
-  padding-block: 1.5rem;
   background-color: v.$neonBlueOpaque;
+  padding-block: 1.5rem;
   box-shadow:  v.$neonBlueBoxShadow;
   z-index: 10;
   
@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-around;
     width: 70%;
+    max-width: 50rem;
     margin-inline: auto;
 
     a {
@@ -41,13 +42,14 @@
     align-content: center;
     transform: skew(-45deg) ;
     cursor: pointer;
-    // &:hover {
-    //   transform: scale(1.1) skew(-45deg);
-    // }
-
-    .arrow {
-      font-size: 3.1rem;
-      color: v.$altHoverColor;
-    }
+  }
+  
+  .arrow {
+    position: absolute;
+    top: -4rem;
+    right: 1rem;
+    font-size: 3.1rem;
+    color: v.$altHoverColor;
+    cursor: pointer;
   }
 }

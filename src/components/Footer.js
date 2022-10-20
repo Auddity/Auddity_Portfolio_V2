@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../scss/_Footer.scss'
 import { FaGithub, FaLinkedin, FaCodepen, FaMedium, FaImdb } from 'react-icons/fa'
-// import { TiLocationArrowOutline } from 'react-icons/ti'
+import { TiLocationArrowOutline } from 'react-icons/ti'
 
 const Footer = () => {
   const date = new Date();
@@ -15,12 +15,10 @@ const Footer = () => {
   const footerStyles = {
     transform: showTab ? "translateY(0)" : "translateY(100%)"
   }
-  // const arrowStyles = {
-  //   transform: showTab ? "rotate(135deg)" : "rotate(-90deg)"
-  // }
-  // const tabStyles = {
-  //   transform: showTab ? "translateY(70%) rotate(45deg)" : null
-  // }
+  const arrowStyles = {
+    transform: showTab ? "rotate(135deg)" : "rotate(-45deg)",
+    top: showTab ? "2rem" : "-4rem"
+  }
 
   return (
     <footer className="Footer main"
@@ -47,11 +45,16 @@ const Footer = () => {
           <p>copyright Auddity &copy; {year}</p>
         </div>
       </div>
-      <div className="Footer-tab" onClick={handleClick} >
-        {/* <TiLocationArrowOutline className='arrow' 
-        style={arrowStyles}
-        /> */}
-      </div>
+      {/* <div className="Footer-showBtn-container"> */}
+        {!showTab && 
+          <div className="Footer-tab" onClick={handleClick} >
+
+          </div>
+        }
+        <TiLocationArrowOutline className='arrow' 
+        style={arrowStyles} onClick={handleClick}
+        />
+      {/* </div> */}
     </footer>
   )
 }
