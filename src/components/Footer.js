@@ -2,14 +2,26 @@ import { useState } from 'react'
 import '../scss/_Footer.scss'
 import { FaGithub, FaLinkedin, FaCodepen, FaMedium, FaImdb } from 'react-icons/fa'
 import { TiLocationArrowOutline } from 'react-icons/ti'
+import useWindowSize from '../hooks/useWindowSize.js'
 
 const Footer = () => {
+  const { width } = useWindowSize();
   const date = new Date();
   const year = date.getFullYear();
 
   const [showFooter, setShowFooter] = useState(false);
   const handleClick = () => {
     setShowFooter(prev => !prev);
+  }
+
+  const positionArrow = () => {
+    if(width < 361 && showFooter) {
+      return "1rem"
+    } else if( width > 361 && showFooter) {
+      return "4rem"
+    } else {
+      return "1rem"
+    }
   }
 
   const footerStyles = {
@@ -20,13 +32,12 @@ const Footer = () => {
   const tabStyles = {
     transform: showFooter ? "skew(0)" : "skew(-45deg)",
     right: showFooter ? "-93px" : "-40px"
-    // top: showFooter ? "-164px" : "-80px"
   }
 
   const arrowStyles = {
     transform: showFooter ? "rotate(135deg)" : "rotate(-45deg)",
     top: showFooter ? "2rem" : "-4rem",
-    right: showFooter ? "4rem" : "1rem"
+    right: positionArrow()
   }
 
   return (
@@ -55,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="Footer-tab" onClick={handleClick} style={tabStyles}></div>
-      <TiLocationArrowOutline className='arrow' 
+      <TiLocationArrowOutline className="arrow"
       style={arrowStyles} onClick={handleClick}
       />
     </footer>
