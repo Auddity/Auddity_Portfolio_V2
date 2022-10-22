@@ -17,7 +17,9 @@ const Portfolio = () => {
   }
 
   return (
-    <main className='Portfolio'>
+    <main className='Portfolio'
+      
+    >
       <h1>Select to view details of the project</h1>
       <div className="Portfolio-links-container">
         {portData.map((item, idx) => {

@@ -12,7 +12,6 @@ const Layout = () => {
       {width > 810 && 
         <div className="right-bar"></div>
       }
-      
       <Header />
       <Outlet />
       <Footer />
