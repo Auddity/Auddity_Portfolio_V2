@@ -41,13 +41,25 @@
       @include mx.flexAround;
       flex-wrap: wrap;
       width: 75%;
-      line-height: 3;
+      line-height: 1.2;
       margin-inline: auto;
       margin-block-start: 2.5rem;
 
-      p {
-        margin-inline: 2rem;
+      &-item-container {
+        margin-block: 1.4rem;
+
+        svg {
+          font-size: 2.2rem;
+          color: v.$neonBlue;
+        }
+
+        p {
+          font-size: 1.8rem;
+          padding-block-start: .5rem;
+          margin-inline: 2rem;
+        }
       }
+
     }
   }
 }

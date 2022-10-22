@@ -1,5 +1,7 @@
 import '../scss/_Hero.scss'
 import logo from '../images/Auddity Logo 2013.png'
+import { FaHtml5, FaCss3, FaSass } from 'react-icons/fa'
+import { SiJavascript, SiReact } from 'react-icons/si'
 
 
 const Home = () => {
@@ -16,11 +18,26 @@ const Home = () => {
       <div className="Hero-info-container">
         <h1>Front End Develompent</h1>
         <div className="tech-list">
-          <p>Html</p>
-          <p>css</p>
-          <p>Sass</p>
-          <p>JavaScript</p>
-          <p>React</p>
+          <div className="tech-list-item-container">
+            <FaHtml5 ></FaHtml5>
+            <p>Html</p>
+          </div>
+          <div className="tech-list-item-container">
+            <FaCss3></FaCss3>
+            <p>css</p>
+          </div>
+          <div className="tech-list-item-container">
+            <FaSass></FaSass>
+            <p>Sass</p>
+          </div>
+          <div className="tech-list-item-container">
+            <SiJavascript></SiJavascript>
+            <p>JavaScript</p>
+          </div>
+          <div className="tech-list-item-container">
+            <SiReact></SiReact>
+            <p>React</p>
+          </div>
         </div>
       </div>
     </main>  
