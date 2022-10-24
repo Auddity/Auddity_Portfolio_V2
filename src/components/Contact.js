@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../scss/_Contact.scss';
+import AnimatedPage from './AnimatedPage';
 
 const Contact = () => {
   const [input, setInput] = useState({
@@ -66,6 +67,8 @@ const Contact = () => {
   }
 
   return (
+    <AnimatedPage>
+
     <main className="Contact height-adjust">
       <div className="Contact-form-container">
         <h1>Please Get in Touch</h1>
@@ -96,7 +99,7 @@ const Contact = () => {
             <label 
               htmlFor="email" 
               className="label"
-            >Enter Email Address</label>
+              >Enter Email Address</label>
             <input 
               type="email" 
               className="input" 
@@ -128,6 +131,8 @@ const Contact = () => {
         </form>
       </div>
     </main>
+    
+              </AnimatedPage>
   )
 }
 

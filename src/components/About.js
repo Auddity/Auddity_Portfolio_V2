@@ -4,11 +4,13 @@ import useWindowSize from '../hooks/useWindowSize';
 import '../scss/_About.scss';
 import logo from '../images/Auddity Logo 2013.png'
 import wave_logo from '../images/Auddity Wave Logo Source.jpg'
+import AnimatedPage from './AnimatedPage';
 
 const About = () => {
   const { width } = useWindowSize();
 
   return (
+    <AnimatedPage>
     <main className="About height-adjust">
       <div className="About-logo-container">
         <img src={logo} alt="Auddity Logo" />
@@ -27,6 +29,7 @@ const About = () => {
           <div className="route">
             <RiSendPlaneFill className='plane' />
           </div>
+        
           <p>
             Get in touch  
           </p>
@@ -34,6 +37,7 @@ const About = () => {
       </div>
       
     </main>
+        </AnimatedPage>
   )
 }
 

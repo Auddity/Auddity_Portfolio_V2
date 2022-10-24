@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import '../scss/_Missing.scss'
+import AnimatedPage from './AnimatedPage';
 
 const Missing = () => {
   return (
+    <AnimatedPage>
     <main className="Missing height-adjust">
       <div className="container">
         <h1>Non esset</h1>
@@ -12,6 +14,7 @@ const Missing = () => {
         <Link to='/contact'>Contact Me</Link>
       </div>
     </main>
+    </AnimatedPage>
   )
 }
 

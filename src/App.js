@@ -1,4 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Layout from './components/Layout'
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
@@ -10,9 +11,13 @@ import ContactSuccess from './components/ContactSuccess';
 import ContactError from './components/ContactError';
 import './scss/_App.scss';
 
+
 function App() {
+  const location = useLocation();
   return (
-    <Routes>
+    <AnimatePresence exitBeforeEnter>
+
+    <Routes key={location.pathname} location={location}>
       <Route path="/" element={<Layout /> }>
         <Route index element={<Home /> } />
         <Route path="portfolio" >
@@ -28,6 +33,8 @@ function App() {
         <Route path="*" element={<Missing /> } />
       </Route>
     </Routes>
+    
+    </AnimatePresence>
   );
 }
 

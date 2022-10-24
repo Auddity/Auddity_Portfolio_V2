@@ -2,6 +2,7 @@ import '../scss/_Hero.scss'
 import logo from '../images/Auddity Logo 2013.png'
 import { FaHtml5, FaCss3, FaSass } from 'react-icons/fa'
 import { SiJavascript, SiReact } from 'react-icons/si'
+import AnimatedPage from './AnimatedPage'
 
 
 const Home = () => {
@@ -11,6 +12,8 @@ const Home = () => {
   // https://reactcommunity.org/react-transition-group/
 
   return (
+    <AnimatedPage>
+
     <main className="Hero height-adjust" >
       <div className="Hero-logo-container">
         <img src={logo} alt="Auddity Logo" />
@@ -41,6 +44,8 @@ const Home = () => {
         </div>
       </div>
     </main>  
+    
+    </AnimatedPage>
   )
 }
 

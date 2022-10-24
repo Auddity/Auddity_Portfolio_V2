@@ -7,6 +7,7 @@ import img5 from '../images/crowdfund-fem-screenshot.png'
 import img6 from '../images/CountdownTimerSC.png';
 import { Link } from 'react-router-dom'
 import '../scss/_Portfolio.scss'
+import AnimatedPage from './AnimatedPage'
 
 const Portfolio = () => {
   const portData = portfolioData.projects;
@@ -17,8 +18,9 @@ const Portfolio = () => {
   }
 
   return (
+    <AnimatedPage> 
     <main className='Portfolio'
-      
+    
     >
       <h1>Select to view details of the project</h1>
       <div className="Portfolio-links-container">
@@ -45,6 +47,8 @@ const Portfolio = () => {
         })}
       </div>
     </main>
+
+</AnimatedPage>
   )
 }
 

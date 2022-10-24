@@ -10,6 +10,7 @@ import img4 from '../images/Spinner-ScreenShot.png'
 import img5 from '../images/crowdfund-fem-screenshot.png'
 import img6 from '../images/CountdownTimerSC.png'
 import '../scss/_PortfolioItem.scss'
+import AnimatedPage from "./AnimatedPage"
 
 const PortfolioItem = () => {
   const { id } = useParams();
@@ -24,9 +25,11 @@ const PortfolioItem = () => {
   }
  
   return (
+    <AnimatedPage>
+
     <main className="PortfolioItem height-adjust"
       style={styles} 
-    >
+      >
       <Link className="back"
         to={`/portfolio`}
       >
@@ -53,6 +56,8 @@ const PortfolioItem = () => {
         </ul>
       </article>
     </main>
+    
+          </AnimatedPage>
   )
 }
 
