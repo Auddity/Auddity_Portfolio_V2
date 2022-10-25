@@ -10,7 +10,7 @@ import img4 from '../images/Spinner-ScreenShot.png'
 import img5 from '../images/crowdfund-fem-screenshot.png'
 import img6 from '../images/CountdownTimerSC.png'
 import '../scss/_PortfolioItem.scss'
-import AnimatedPage from "./AnimatedPage"
+import AnimatedPage from "../Animations/AnimatedPage"
 
 const PortfolioItem = () => {
   const { id } = useParams();
@@ -26,38 +26,36 @@ const PortfolioItem = () => {
  
   return (
     <AnimatedPage>
-
-    <main className="PortfolioItem height-adjust"
-      style={styles} 
-      >
-      <Link className="back"
-        to={`/portfolio`}
-      >
-        <RiArrowLeftSFill className="icon" />
-        <p>
-          Back to Portfolio
-        </p>
-      </Link>
-      <article className="project">
-        <h1>{project.title}</h1>
-          <div className="project-anchor-content">
-        <a href={project.live_url} target="blank">
-            <div className="overlay-content">
-              <p>Go to live site</p>
+      <main className="PortfolioItem height-adjust"
+        style={styles} 
+        >
+        <Link className="back"
+          to={`/portfolio`}
+        >
+          <RiArrowLeftSFill className="icon" />
+          <p>
+            Back to Portfolio
+          </p>
+        </Link>
+        <article className="project">
+          <h1>{project.title}</h1>
+            <div className="project-anchor-content">
+          <a href={project.live_url} target="blank">
+              <div className="overlay-content">
+                <p>Go to live site</p>
+              </div>
+              <img src={imageArray[id - 1]} alt={project.title} />
+              <div className="overlay-bg"></div>
+          </a>
             </div>
-            <img src={imageArray[id - 1]} alt={project.title} />
-            <div className="overlay-bg"></div>
-        </a>
-          </div>
-        <ul className="project-features" ref={ref}>
-          {project.features.map((feature, idx) => {
-            return <li key={idx}>{feature}</li>
-          })}
-        </ul>
-      </article>
-    </main>
-    
-          </AnimatedPage>
+          <ul className="project-features" ref={ref}>
+            {project.features.map((feature, idx) => {
+              return <li key={idx}>{feature}</li>
+            })}
+          </ul>
+        </article>
+      </main>
+    </AnimatedPage>
   )
 }
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../scss/_Contact.scss';
-import AnimatedPage from './AnimatedPage';
+import AnimatedPage from '../Animations/AnimatedPage';
 
 const Contact = () => {
   const [input, setInput] = useState({

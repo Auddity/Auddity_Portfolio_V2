@@ -7,7 +7,7 @@
   background-color: v.$neonBlueOpaque;
   padding-block: 1.5rem;
   z-index: 10;
-  transition: all 1s ease;
+  transition: all .8s ease;
   
   .links-container {
     padding-block-end: 1rem;
@@ -31,7 +31,7 @@
       }
       
       &:hover {
-        transition: scale 1s ease;
+        transition: scale .6s ease;
         color:v.$altHoverColor;
       }
     }
@@ -46,7 +46,7 @@
     box-shadow: -4px -4px 1rem hsl(199, 100%, 50%);
     z-index: 11;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all .6s ease;
     overflow: hidden;
   }
   

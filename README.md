@@ -17,4 +17,6 @@ It's also built with ReactJS, since I'm currently learning to use it.
 - Applied Framer-Motion
   - Put in some basic transition effects
 
-  - TODO: Play around with it more and see what may work better.
+  - Footer Link Bounce Animation
+
+  - TODO: Fix Header/Nav Link Animation

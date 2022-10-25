@@ -7,7 +7,7 @@ import img5 from '../images/crowdfund-fem-screenshot.png'
 import img6 from '../images/CountdownTimerSC.png';
 import { Link } from 'react-router-dom'
 import '../scss/_Portfolio.scss'
-import AnimatedPage from './AnimatedPage'
+import AnimatedPage from '../Animations/AnimatedPage'
 
 const Portfolio = () => {
   const portData = portfolioData.projects;
@@ -19,36 +19,33 @@ const Portfolio = () => {
 
   return (
     <AnimatedPage> 
-    <main className='Portfolio'
-    
-    >
-      <h1>Select to view details of the project</h1>
-      <div className="Portfolio-links-container">
-        {portData.map((item, idx) => {
-          return (
-            <Link 
-            className="port-item-link"
-            key={item.id}
-            to={`${item.id}`}
-            >
-              <div className="port-item-link-content">
-                <div className="overlay-content">
-                  <p>{item.desc}</p>
+      <main className='Portfolio'>
+        <h1>Select to view details of the project</h1>
+        <div className="Portfolio-links-container">
+          {portData.map((item, idx) => {
+            return (
+              <Link 
+              className="port-item-link"
+              key={item.id}
+              to={`${item.id}`}
+              >
+                <div className="port-item-link-content">
+                  <div className="overlay-content">
+                    <p>{item.desc}</p>
+                  </div>
+                  <div className="overlay-bg"><p></p></div>
+                  <img src={imageArray[idx]} alt={item.title} />  
+                  <div className="port-item-link-content-info">
+                    <p>{item.title}</p>
+                    <p>{buildInfoFormat(item.built_with)}</p>
+                  </div>
                 </div>
-                <div className="overlay-bg"><p></p></div>
-                <img src={imageArray[idx]} alt={item.title} />  
-                <div className="port-item-link-content-info">
-                  <p>{item.title}</p>
-                  <p>{buildInfoFormat(item.built_with)}</p>
-                </div>
-              </div>
-            </Link>
-          )
-        })}
-      </div>
-    </main>
-
-</AnimatedPage>
+              </Link>
+            )
+          })}
+        </div>
+      </main>
+    </AnimatedPage>
   )
 }
 

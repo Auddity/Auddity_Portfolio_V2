@@ -20,8 +20,8 @@ function AnimatedPage({ children }) {
       animate='animate'
       exit='exit'
       transition = {{
-        opacity: { ease: "linear", duration: .23 },
-        scale: { ease: "linear", duration: .19},
+        opacity: { ease: "easeIn", duration: .29 },
+        scale: { ease: "easeIn", duration: .21},
         type: "tween", stiffness: 0
       }}
     >

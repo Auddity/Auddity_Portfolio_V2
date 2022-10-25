@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import AnimatedLink from '../Animations/AnimatedLinks';
 import useWindowSize from '../hooks/useWindowSize';
 import { FaBars } from 'react-icons/fa';
 import '../scss/_Nav.scss'
@@ -28,9 +29,17 @@ const Nav = () => {
       
       {(width > 768 || open) &&
         <div className="link-container">
-          <Link to="/portfolio" onClick={handleMenu}>Portfolio</Link>
-          <Link to="/about" onClick={handleMenu}>About</Link>
-          <Link to="/contact" onClick={handleMenu}>Contact</Link>
+          <AnimatedLink>
+            <Link to="/portfolio" onClick={handleMenu}>Portfolio</Link>
+          </AnimatedLink>
+          <AnimatedLink>
+            
+            <Link to="/about" onClick={handleMenu}className="nav-link">About</Link>
+          </AnimatedLink>
+          <AnimatedLink>
+
+            <Link to="/contact" onClick={handleMenu}className="nav-link">Contact</Link>
+          </AnimatedLink>
         </div>
       }
     </nav>
