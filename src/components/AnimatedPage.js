@@ -12,7 +12,7 @@ const transitions = {
   }
 }
 
-function AnimatedPage({children}) {
+function AnimatedPage({ children }) {
   return (
     <motion.div
       variants={transitions}
@@ -20,11 +20,12 @@ function AnimatedPage({children}) {
       animate='animate'
       exit='exit'
       transition = {{
-        opacity: { ease: "linear" },
-        duration: 0.3
+        opacity: { ease: "linear", duration: .23 },
+        scale: { ease: "linear", duration: .19},
+        type: "tween", stiffness: 0
       }}
     >
-      {children}
+      { children }
     </motion.div>
   )
 }

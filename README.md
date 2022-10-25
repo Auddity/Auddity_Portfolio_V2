@@ -1,7 +1,7 @@
 # New Portfolio Site
 
 [LiveSite](https://audditydev.netlify.app/)
-last update: 10/24/2022
+last update: 10/25/2022
 
 Early on in an interview I was asked what my weakest aspect in CSS was.  I answered it was animations.
 
