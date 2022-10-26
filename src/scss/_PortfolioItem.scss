@@ -2,6 +2,9 @@
 @use 'mixins' as mx;
 
 .PortfolioItem {
+  width: min(100% - 3rem, 80rem);
+  margin-inline: auto;
+
   .back {
     position: absolute;
     top: 1rem;
@@ -25,10 +28,6 @@
   }
 
   .project {
-    width: 85%;
-    max-width: 80rem;
-    margin-inline: auto;
-
     h1 {
       padding-block: 7rem 3rem;
       @include mx.mq(768px) {

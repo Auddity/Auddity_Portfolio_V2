@@ -5,15 +5,10 @@
   @include mx.flexStart;
   flex-direction: column;
   padding-block-start: 5rem;
-
+  
   &-logo-container {
-    max-width: 70.5rem;
-    @include mx.mq(768px) {
-      width: 70%;
-    }
-    @include mx.mq(1024px) {
-      width: 50%;
-    }
+    width: min(100% - 3rem, 70.5rem);
+    margin-inline: auto;
 
     img {
       padding-inline-start: 2rem;
@@ -25,11 +20,11 @@
 
   &-info-container {
     @include mx.flexCenter;
-    max-width: 90rem;
     padding-block-start: 3rem;
+    width: min(100% - 3rem, 90rem);
+    margin-inline: auto;
     @include mx.mq(768px) {
       padding-block: 3rem 0;
-      width: 80%;
     }
 
     img {
@@ -54,8 +49,6 @@
     transform: scaleX(3);
 
     a {
-      
-
       .route {
         width: 100%;
         height: 100%;

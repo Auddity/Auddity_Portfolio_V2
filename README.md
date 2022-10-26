@@ -1,7 +1,7 @@
 # New Portfolio Site
 
 [LiveSite](https://audditydev.netlify.app/)
-last update: 10/25/2022
+last update: 10/26/2022
 
 Early on in an interview I was asked what my weakest aspect in CSS was.  I answered it was animations.
 
@@ -15,8 +15,11 @@ It's also built with ReactJS, since I'm currently learning to use it.
 - Utilized React Router
 
 - Applied Framer-Motion
-  - Put in some basic transition effects
+  - Scale and opacity transition effects on components
 
-  - Footer Link Bounce Animation
+  - Footer and Nav Link Bounce Animation
 
-  - TODO: Fix Header/Nav Link Animation
+  TODO: Add color animation to Nav links on hover
+
+  TODO: Make Links on contact/success more clear that they're links
+    - animated color
