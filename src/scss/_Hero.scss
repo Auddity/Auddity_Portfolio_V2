@@ -6,7 +6,9 @@
   @include mx.flexStart;
   flex-direction: column;
   background-color: transparent;
-  
+  // width: min(100% - 3rem, 70.5rem);
+  // margin-inline: auto;
+
   &-logo-container {
     padding-block-start: 11rem;
     max-width: 70.5rem;

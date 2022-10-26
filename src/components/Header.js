@@ -1,6 +1,6 @@
 import '../scss/_Header.scss'
 import { Link } from 'react-router-dom';
-import AnimatedLink from '../Animations/AnimatedLinks';
+import { AnimatedHeaderLink } from '../Animations/AnimatedLink';
 import Nav from './Nav';
 
 const Header = () => {
@@ -9,11 +9,11 @@ const Header = () => {
     <header className="Header">
       <div className="Header-content-ctnr">
         <div className="logo-container">
-          <AnimatedLink>
+          <AnimatedHeaderLink>
             <Link to="/">
               <p>Home</p>
             </Link>
-          </AnimatedLink>
+          </AnimatedHeaderLink>
         </div>
         <Nav />
       </div>

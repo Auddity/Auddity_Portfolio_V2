@@ -6,11 +6,6 @@ import AnimatedPage from '../Animations/AnimatedPage'
 
 
 const Home = () => {
-  // TODO: Have a transition to scale and opacity for each component with a <main> tag
-  // Give it a try with this API, ReactCSSTransitionGroup
-  // https://reactjs.org/docs/animation.html
-  // https://reactcommunity.org/react-transition-group/
-
   return (
     <AnimatedPage>
       <main className="Hero height-adjust" >

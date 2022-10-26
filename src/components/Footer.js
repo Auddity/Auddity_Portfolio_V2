@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../scss/_Footer.scss'
 import { FaGithub, FaLinkedin, FaCodepen, FaMedium, FaImdb } from 'react-icons/fa'
 import { TiLocationArrowOutline } from 'react-icons/ti'
-import AnimatedLink from '../Animations/AnimatedLinks'
+import { AnimatedFooterLink }from '../Animations/AnimatedLink'
 import useWindowSize from '../hooks/useWindowSize.js'
 
 const Footer = () => {
@@ -46,31 +46,31 @@ const Footer = () => {
     style={footerStyles}>
       <div className="Footer-container">
         <div className="links-container">
-          <AnimatedLink>
+          <AnimatedFooterLink>
             <a href="https://github.com/Auddity" className='icon-anchor'>
               <FaGithub className="icon" />
             </a>
-          </AnimatedLink>
-          <AnimatedLink>
+          </AnimatedFooterLink>
+          <AnimatedFooterLink>
             <a href="https://www.linkedin.com/in/james-bretz-b80242180/">
               <FaLinkedin className="icon" />
             </a>
-          </AnimatedLink>
-          <AnimatedLink>
+          </AnimatedFooterLink>
+          <AnimatedFooterLink>
             <a href="https://codepen.io/Auddity">
               <FaCodepen className="icon" />
             </a>
-          </AnimatedLink>
-          <AnimatedLink>
+          </AnimatedFooterLink>
+          <AnimatedFooterLink>
             <a href="https://medium.com/@jay.auddity">
               <FaMedium className="icon" />
             </a>
-          </AnimatedLink>
-          <AnimatedLink>
+          </AnimatedFooterLink>
+          <AnimatedFooterLink>
             <a href="https://www.imdb.com/name/nm5652671/">
               <FaImdb className="icon" />
             </a>
-          </AnimatedLink>
+          </AnimatedFooterLink>
         </div>
         <div className="copy-write-container">
           <p>copyright Auddity &copy; {year}</p>

@@ -10,7 +10,10 @@
   }
 
   .link-container {
-    a {
+    @include mx.mq(768px) {
+      display: flex;
+    }
+    a.nav-link {
       @include mx.mq(768px) {
         margin-inline: 2rem;
       }
@@ -31,16 +34,17 @@
       flex-direction: column;
       width: 100%;
       background: v.$transparentBg;
-      padding-block-start: 10rem;
+      padding-block-start: 12rem;
       z-index: 4;
       height: 100%;
       
-      a {
-        padding-block: 1rem;
-        font-size: 1.9rem;
-        letter-spacing: 1.5px;
+      div {
+        padding-block: 1.8rem;
 
-        
+        a {
+          font-size: 1.9rem;
+          letter-spacing: 1.5px;
+        }
       }
     }
   }
