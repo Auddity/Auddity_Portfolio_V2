@@ -20,7 +20,7 @@ It's also built with ReactJS, since I'm currently learning to use it.
 
 ## Next Steps
 Priority:
-  - Add Note to click portfolio item image to go to live site when vewing on mobile.
+  - Add an about page component
 
 Secondary:
   - Make Links on contact/success more clear that they're links

@@ -119,6 +119,13 @@
             line-height: 1.4;
           }
 
+          p {
+            font-size: 1.6rem;
+            @include mx.mq(768px) {
+              font-size: 1.8rem;
+            }
+          }
+
           p:first-child {
             text-decoration: underline;
           }

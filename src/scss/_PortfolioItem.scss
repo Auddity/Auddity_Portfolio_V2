@@ -1,5 +1,6 @@
 @use 'variables' as v;
 @use 'mixins' as mx;
+@use 'functions' as f;
 
 .PortfolioItem {
   width: min(100% - 8rem, 80rem);
@@ -50,6 +51,23 @@
           inset: 0;
           transition: inset .4s ease-in-out;
         }
+      }
+
+      &:before {
+        content: 'Tap to view live site';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: f.setTextColor(#fff);
+        padding: .5rem;
+
+        @include mx.mq(768px) {
+          padding: 2rem;
+        }
+
+        @include mx.mq(1025px) {
+          content: '';
+        }       
       }
 
       .overlay-content {
