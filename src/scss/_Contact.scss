@@ -13,11 +13,18 @@
       font-size: 3.3rem;
       padding-block-start: 8rem;
     }
+    @include mx.mqh(1080px) {
+      margin-block-start: 10rem;
+      font-size: 3.5rem;
+    }
   }
 
   form {
     width: min(100% - 3rem, 68rem);
     margin-inline: auto;
+    @include mx.mqh(1080px) {
+      margin-block-start: 10rem;
+    }
 
     .form-control {
       width: 80%;

@@ -2,7 +2,7 @@
 @use 'mixins' as mx;
 
 .PortfolioItem {
-  width: min(100% - 3rem, 80rem);
+  width: min(100% - 8rem, 80rem);
   margin-inline: auto;
 
   .back {

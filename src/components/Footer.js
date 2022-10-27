@@ -16,9 +16,9 @@ const Footer = () => {
   }
 
   const positionArrow = () => {
-    if(width < 361 && showFooter) {
+    if(width < 412 && showFooter) {
       return "1rem"
-    } else if( width > 361 && showFooter) {
+    } else if( width > 412 && showFooter) {
       return "4rem"
     } else {
       return "1rem"

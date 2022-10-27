@@ -1,7 +1,7 @@
 # New Portfolio Site
 
 [LiveSite](https://audditydev.netlify.app/)
-last update: 10/26/2022
+last update: 10/27/2022
 
 Early on in an interview I was asked what my weakest aspect in CSS was.  I answered it was animations.
 
@@ -14,12 +14,19 @@ It's also built with ReactJS, since I'm currently learning to use it.
 ## Built Using React
 - Utilized React Router
 
-- Applied Framer-Motion
+- Utilizing Framer-Motion
   - Scale and opacity transition effects on components
 
   - Footer and Nav Link Bounce Animation
 
-  TODO: Add color animation to Nav links on hover
+## Next Steps
+Priority:
+  - Decide Font.  Use [fontjoy](https://fontjoy.com/)
 
-  TODO: Make Links on contact/success more clear that they're links
+  - Add Note to click portfolio item image to go to live site when vewing on mobile.
+
+Secondary:
+  - Add color animation to Nav links on hover
+
+  - Make Links on contact/success more clear that they're links
     - animated color

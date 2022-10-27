@@ -3,8 +3,11 @@
 @use './functions' as f;
 
 .Portfolio {
-  height: 100%;
+  height: 100%; 
   padding-block-end: 2rem;
+  @include mx.mqh(1080px) {
+    height: 100vh;
+  }
   
   h1 {
     width: 80%;
@@ -14,6 +17,10 @@
     margin-block: 2rem;
     @include mx.mq(768px) {
       margin-block: 5rem;
+      font-size: 2.5rem;
+    }
+    @include mx.mqh(1080px) {
+      margin-block-start: 10rem;
     }
   }
 
@@ -27,6 +34,10 @@
     @include mx.mq(768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    @include mx.mqh(1080px) {
+      margin-block-start: 10rem;
     }
     
     .port-item-link {

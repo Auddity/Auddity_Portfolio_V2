@@ -13,6 +13,9 @@
     @include mx.mq(768px) {
       display: flex;
     }
+
+    // TODO: background-clip
+    // See obsidian notes
     a.nav-link {
       @include mx.mq(768px) {
         margin-inline: 2rem;

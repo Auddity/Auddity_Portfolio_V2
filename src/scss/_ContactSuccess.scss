@@ -5,6 +5,9 @@
     width: min(100% - 3rem, 70.5rem);
     margin-inline: auto;
     padding-block-start: 11rem;
+    @include mx.mqh(1080px) {
+      margin-block-start: 10rem;
+    }
 
     img {
       padding-inline-start: 2rem;
@@ -16,6 +19,7 @@
 
   .info-container {
     margin-block-start: 2.5rem;
+    
 
     h1 {
       padding-block-end: 2rem;
