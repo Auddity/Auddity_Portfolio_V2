@@ -1,4 +1,5 @@
 @use './mixins' as mx;
+@use './variables' as v;
 
 .Header {
   position: relative;
@@ -19,5 +20,22 @@
     @include mx.mq(1024px) {
       font-size: 2rem;
     }
+
+    a:hover {
+      background-image: v.$hoverMovingGradient;
+      background-clip: text;
+      color: transparent;
+      background-size: 1200%;
+      animation: movingGradient 3s infinite;
+      text-shadow: none;
+    }
+  }
+}
+
+@keyframes movingGradient {
+  0% {
+    background-position: top left;
+  } 100% {
+    background-position: bottom right;
   }
 }

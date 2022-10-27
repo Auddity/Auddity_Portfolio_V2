@@ -4,10 +4,18 @@ $textDefault: #f0f3ff;
 $textShadow: 0 0 .5rem hsla(212, 80%, 66%, 0.5);
 $neonBlue: hsl(199, 100%, 50%);
 $neonBlueOpaque: hsla(199, 100%, 50%, 0.2);
-$altHoverColor: hsla(0, 100%, 50%, 0.644);
+$altHoverColor: rgba(255, 0, 0, 0.644);
 
 $neonBlueBoxShadow: 0 0 2rem hsl(199, 100%, 50%);
 $altHoverColorBoxShadow: 0 0 4rem 4rem hsla(0, 100%, 50%, 0.6);
 
 $lineGradient-up: linear-gradient(hsla(0, 100%, 50%, 0.6) 40%, transparent);
 $lineGradient-down: linear-gradient(transparent, hsla(0, 100%, 50%, 0.6) 40%);
+$hoverMovingGradient: linear-gradient(-55deg, 
+  hsl(199, 100%, 50%) 0%, 
+  transparent 10%, 
+  hsl(0, 100%, 50%) 30%,
+  transparent 50%,
+  hsl(199, 100%, 50%) 75%,
+  transparent 95%,
+  hsl(0, 100%, 50%) 100%);

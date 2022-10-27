@@ -16,17 +16,12 @@ It's also built with ReactJS, since I'm currently learning to use it.
 
 - Utilizing Framer-Motion
   - Scale and opacity transition effects on components
-
   - Footer and Nav Link Bounce Animation
 
 ## Next Steps
 Priority:
-  - Decide Font.  Use [fontjoy](https://fontjoy.com/)
-
   - Add Note to click portfolio item image to go to live site when vewing on mobile.
 
 Secondary:
-  - Add color animation to Nav links on hover
-
   - Make Links on contact/success more clear that they're links
     - animated color
