@@ -5,13 +5,12 @@ import Nav from './Nav';
 
 const Header = () => {
   return (
-
     <header className="Header">
       <div className="Header-content-ctnr">
         <div className="logo-container">
           <AnimatedHeaderLink>
             <Link to="/">
-              <p>Home</p>
+              Home
             </Link>
           </AnimatedHeaderLink>
         </div>

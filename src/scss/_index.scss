@@ -9,26 +9,29 @@
 
 html {
   font-size: 62.5%;
+  
+  body {
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #000;
+    color: f.setTextColor(#000);
+    
+    a, h1, h2, h3, h4, h5, h6 {
+      color: f.setTextColor(#000);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+    a:hover {
+      color: v.$neonBlue;
+      text-shadow: v.$textShadow;
+    }
+
+    p {
+      text-transform: none;
+      font-size: 1.8rem;
+    }
+  }
 }
 
-body {
-  // font-family: 'Cinzel Decorative', cursive,
-  // sans-serif;
-  // font-family: 'Caudex', serif;
-  font-family: 'Marcellus SC', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #000;
-  color: f.setTextColor(#000);
-}
-
-a {
-  color: f.setTextColor(#000);
-  text-decoration: none;
-}
-
-a:hover {
-  color: v.$neonBlue;
-  text-shadow: v.$textShadow;
-}
