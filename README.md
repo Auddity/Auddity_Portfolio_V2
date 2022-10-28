@@ -20,8 +20,14 @@ It's also built with ReactJS, since I'm currently learning to use it.
 
 ## Next Steps
 Priority:
-  - Add an about page component
+  - Add Focus States to links
 
 Secondary:
   - Make Links on contact/success more clear that they're links
     - animated color
+
+  - Header Links gradient effect on tech logos.
+
+  - Create Sass function for animations that are reused?
+
+  - Apply Footer visible state site wide to accomodate elements it overlaps.

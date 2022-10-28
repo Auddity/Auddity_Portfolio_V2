@@ -6,9 +6,9 @@ main {
 }
 
 .height-adjust {
-  height: calc(100vh - 164px);
+  height: calc(100vh - 167px);
   @include mx.mq(1024px) {
-    height: calc(100vh - 184px);
+    height: calc(100vh - 187px);
   }
 }
 

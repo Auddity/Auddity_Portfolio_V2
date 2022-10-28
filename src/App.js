@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Missing from './components/Missing';
 import ContactSuccess from './components/ContactSuccess';
 import ContactError from './components/ContactError';
+import AboutSite from './components/AboutSite';
 import './scss/_App.scss';
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="success" element={<ContactSuccess />} />
             <Route path="error" element={<ContactError />} />
           </Route>
+          <Route path="aboutsite" element={<AboutSite />} />
           <Route path="*" element={<Missing /> } />
         </Route>
       </Routes>

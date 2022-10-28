@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import '../scss/_Footer.scss'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FaGithub, FaLinkedin, FaCodepen, FaMedium, FaImdb } from 'react-icons/fa'
 import { TiLocationArrowOutline } from 'react-icons/ti'
 import { AnimatedFooterLink }from '../Animations/AnimatedLink'
@@ -76,10 +77,14 @@ const Footer = () => {
           <p>copyright Auddity &copy; {year}</p>
         </div>
       </div>
+      {/* Positions Absolute */}
       <div className="Footer-tab" onClick={handleClick} style={tabStyles}></div>
       <TiLocationArrowOutline className="arrow"
       style={arrowStyles} onClick={handleClick}
       />
+      <Link to='/aboutsite' className='about-link'>
+        About this site
+      </Link>
     </footer>
   )
 }

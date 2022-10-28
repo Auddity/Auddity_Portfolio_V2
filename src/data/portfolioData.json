@@ -7,7 +7,7 @@
       "desc": "Users can enter the bill total, select a preset or custom percentage to tip, and enter the number of people in the dinning party.",
       "features": [
         "State is controlled by useReducer",
-        "Uses controlled input compenents",
+        "Uses controlled input components",
         "Conditional rendering of elements and styles based on state",
         "Mobile first approach" 
       ],
@@ -21,7 +21,7 @@
       "features": [
         "Local storage is used to keep track of data",
         "CRUD functionality - User can create a player and enter their stats, edit a player's stats, update a player's stats, and delete a player",
-        "Player's stats are displayed in their respective catagories and are sorted in order form highest to lowest",
+        "Player's stats are displayed in their respective catagories and are sorted in order from highest to lowest",
         "Mobile first approach"
       ],
       "live_url": "https://stat-tracker-app.vercel.app/"
@@ -33,7 +33,7 @@
       "desc": "Single Page Site to Shorten a URL",
       "features": [
         "Uses Shrtcode's API to shorten a submitted URL",
-        "With a promise constructor, used the xhr object to make a HTTP request to Shrtcode",
+        "With a promise constructor, I used the xhr object to make a HTTP request to Shrtcode",
         "Upon each succesful request a new element is added to the DOM, displaying the original URL and the shortened URL",
         "Uses the browser's clipboard API to copy the short code on a click of a button",
         "Mobile first approach"
@@ -67,7 +67,7 @@
       "id": 6,
       "title": "Countdown Timer App",
       "built_with": "Vanilla JavaScript, CSS, HTML",
-      "desc": "A timer app then sends a notification to the users system when time is up",
+      "desc": "A timer app that sends a notification to the users system when time is up",
       "features": [
         "Utilizes the notifications API to alert the user on their system when time has expired",
         "Uses 'beforeunload' listener to notify they may loose the current running timer if they refresh or leave the page",

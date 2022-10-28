@@ -1,0 +1,70 @@
+@use 'mixins' as mx;
+@use 'variables' as v;
+
+.AboutSite {
+  width: min(100% - 3rem, 70.5rem);
+  margin-inline: auto;
+  padding-block-start: 5rem;
+
+  h1 {
+    width: 90%;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-inline: auto;
+    margin-block-end: 2rem;
+
+    @include mx.mq(810px) {
+      font-size: 3rem;
+      margin-block: 8rem;
+    }
+    
+    @include mx.mq(1024px) {
+      line-height: 1.2;
+    }
+  }  
+
+  p {
+    padding-block: 1rem;
+    line-height: 1.2;
+
+    @include mx.mq(810px) {
+      width: 80%;
+      font-size: 2rem;
+      text-align: left;
+      line-height: 1.3;
+      margin-inline: auto;
+    }
+  }
+
+  .photo-credit {
+    padding-block-start: 2rem;
+    @include mx.mq(810px) {
+      padding-block-start: 8rem;
+    }
+
+    @include mx.mq(1024px) {
+      transform: translateX(-40%);
+    }
+
+    p {
+      font-size: 1.4rem;
+
+      a {
+        background-image: v.$hoverMovingGradient;
+        background-size: 1400%;
+        background-clip: text;
+        background-position: top left;
+        color: transparent;
+        animation: bgcolors 5s infinite alternate;
+      }
+    }
+  }
+}
+
+@keyframes bgcolors {
+  0% {
+    background-position: top left;
+  } 100% {
+    background-position: bottom right;
+  }
+}
