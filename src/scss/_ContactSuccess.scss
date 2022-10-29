@@ -1,4 +1,5 @@
 @use './mixins' as mx;
+@use './variables' as v;
 
 .ContactSuccess {
   .logo-container {
@@ -27,16 +28,41 @@
 
     .link-container {
       padding-block-start: 2rem;
+
       a {
+        display: inline-block;
         font-size: 2rem;
-      }
-      a:first-child {
-        margin-inline-end: 2rem;
+        background-image: v.$movingGradient;
+        background-size: 2200%;
+        background-position: top left;
+        background-clip: text;
+        color: transparent;
+        animation: bg-movement 4s infinite alternate;
+        transition: all .5s ease;
+
+        &:first-child {
+          margin-inline-end: 2rem;
+        }
+
+        &.link:hover {
+          transform: scale(1.1);
+          transition: all .5s ease;
+          text-shadow: none;
+        }
       }
 
       p {
         padding-block: 2rem;
       }
     }
+  }
+}
+
+@keyframes bg-movement {
+  0% {
+    background-position: top left;
+  } 
+  100% {
+    background-position: bottom right;
   }
 }

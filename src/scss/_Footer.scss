@@ -25,13 +25,12 @@
         transition: all .5s ease;
 
         &:hover {
-          transition: all .5s ease;
           transform: scale(1.6);
+          transition: all .5s ease;
         }
       }
       
       &:hover {
-        transition: scale .6s ease;
         color:v.$altHoverColor;
       }
     }

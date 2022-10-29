@@ -11,7 +11,7 @@ $altHoverColorBoxShadow: 0 0 4rem 4rem hsla(0, 100%, 50%, 0.6);
 
 $lineGradient-up: linear-gradient(hsla(0, 100%, 50%, 0.6) 40%, transparent);
 $lineGradient-down: linear-gradient(transparent, hsla(0, 100%, 50%, 0.6) 40%);
-$hoverMovingGradient: linear-gradient(-55deg, 
+$movingGradient: linear-gradient(-55deg, 
   hsl(199, 100%, 50%) 0%, 
   transparent 10%, 
   hsl(0, 100%, 50%) 30%,

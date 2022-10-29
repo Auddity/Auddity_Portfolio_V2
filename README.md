@@ -23,11 +23,10 @@ Priority:
   - Add Focus States to links
 
 Secondary:
-  - Make Links on contact/success more clear that they're links
-    - animated color
-
-  - Header Links gradient effect on tech logos.
+ - Header Links gradient effect on tech logos.
 
   - Create Sass function for animations that are reused?
+
+  - Refactor repeated code across components
 
   - Apply Footer visible state site wide to accomodate elements it overlaps.
