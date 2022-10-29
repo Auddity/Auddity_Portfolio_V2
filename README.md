@@ -22,11 +22,13 @@ It's also built with ReactJS, since I'm currently learning to use it.
 Priority:
   - Add Focus States to links
 
-Secondary:
- - Header Links gradient effect on tech logos.
-
   - Create Sass function for animations that are reused?
+
+Secondary:
+  - Header Links gradient effect on tech logos.
 
   - Refactor repeated code across components
 
   - Apply Footer visible state site wide to accomodate elements it overlaps.
+
+  - Make logo image it's own component, will be always visible (no transition) except on specific pages.

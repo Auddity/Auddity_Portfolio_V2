@@ -15,3 +15,34 @@ main {
 .hidden {
   display: none;
 }
+
+
+// ALL KEYFRAMES
+@keyframes bg-movement {
+  0% {
+    background-position: top left;
+  } 
+  100% {
+    background-position: bottom right;
+  }
+}
+
+// contact component
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg)
+  } 100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes correctScale {
+  20% {
+    transform: scale(.5, .4);
+  } 40% {
+    transform: scale(.5, .4);
+  } 64% {
+    transform: scale(.7, 1);
+  } 80% {
+    transform: scale(.4, 1);
+  }
+}

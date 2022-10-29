@@ -26,16 +26,8 @@
       background-clip: text;
       color: transparent;
       background-size: 1200%;
-      animation: movingGradient 3s infinite;
+      animation: bg-movement 3s infinite;
       text-shadow: none;
     }
-  }
-}
-
-@keyframes movingGradient {
-  0% {
-    background-position: top left;
-  } 100% {
-    background-position: bottom right;
   }
 }
