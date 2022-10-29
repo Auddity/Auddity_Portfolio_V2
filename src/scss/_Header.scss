@@ -21,13 +21,20 @@
       font-size: 2rem;
     }
 
-    a:hover {
-      background-image: v.$movingGradient;
-      background-clip: text;
-      color: transparent;
-      background-size: 1200%;
-      animation: bg-movement 3s infinite;
-      text-shadow: none;
+    a {
+      display: inline-block;
+      transition: all .5s ease;
+
+      &:hover, &:focus {
+        text-shadow: none;
+        background-image: v.$movingGradient;
+        background-clip: text;
+        color: transparent;
+        background-size: 2200%;
+        animation: bg-movement 4s infinite;
+        transform: scale(1.1);
+        transition: all .5s ease;
+      }
     }
   }
 }

@@ -44,7 +44,7 @@
           margin-inline-end: 2rem;
         }
 
-        &.link:hover {
+        &.link:hover, &.link:focus {
           transform: scale(1.1);
           transition: all .5s ease;
           text-shadow: none;

@@ -42,7 +42,10 @@
       overflow: hidden;
       width: 100%;
 
-      &:hover {
+      & a:hover, & a:focus {
+        color: v.$neonBlue;
+        text-shadow: v.$textShadow;
+
         .overlay-content {
           inset: 0;
           transition: inset .3s ease-in-out .2s;

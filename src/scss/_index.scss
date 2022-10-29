@@ -22,10 +22,9 @@ html {
       text-decoration: none;
       text-transform: uppercase;
     }
-    
-    a:hover {
-      color: v.$neonBlue;
-      text-shadow: v.$textShadow;
+  
+    a:focus {
+      outline: none;
     }
 
     p {

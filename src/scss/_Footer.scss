@@ -18,19 +18,18 @@
     margin-inline: auto;
 
     a {
+      display: inline-block;
+      transition: all .5s ease;
+
       .icon {
         display: inline-block;
         font-size: 2rem;
         z-index: 15;
-        transition: all .5s ease;
-
-        &:hover {
-          transform: scale(1.6);
-          transition: all .5s ease;
-        }
       }
       
-      &:hover {
+      &:hover, &:focus {
+        transform: scale(1.6);
+        transition: all .5s ease;
         color:v.$altHoverColor;
       }
     }
@@ -74,7 +73,7 @@
       left: 10%;
     }
 
-    &:hover {
+    &:hover, &:focus {
       color: v.$altHoverColor;
       text-shadow: none;
       transform: scale(1.1);

@@ -69,7 +69,10 @@
         }
       }
       
-      &:hover {
+      &:hover, &:focus {
+        color: v.$neonBlue;
+        text-shadow: v.$textShadow;
+
         .route {
           animation: orbit 2s infinite linear;
 

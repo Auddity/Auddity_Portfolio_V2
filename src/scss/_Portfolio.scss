@@ -54,7 +54,10 @@
 
       // *** Use above if Odd Number of Projects ***
 
-      &:hover {
+      &:hover, &:focus {
+        color: v.$neonBlue;
+        text-shadow: v.$textShadow;
+        
         .overlay-content {
           inset: 0;
           transition: inset .3s ease-in-out .2s;
