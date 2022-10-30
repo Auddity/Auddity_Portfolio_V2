@@ -75,9 +75,7 @@
 
     &:hover, &:focus {
       color: v.$altHoverColor;
-      text-shadow: none;
-      transform: scale(1.1);
-      transition: all .5s ease;
+      @include mx.scaleTransition;
     }
   }
 }

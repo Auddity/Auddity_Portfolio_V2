@@ -21,7 +21,6 @@
   .info-container {
     margin-block-start: 2.5rem;
     
-
     h1 {
       padding-block-end: 2rem;
     }
@@ -30,24 +29,16 @@
       padding-block-start: 2rem;
 
       a {
-        display: inline-block;
         font-size: 2rem;
-        background-image: v.$movingGradient;
-        background-size: 2200%;
-        background-position: top left;
-        background-clip: text;
-        color: transparent;
-        animation: bg-movement 4s infinite alternate;
+        @include mx.movingGradient;
         transition: all .5s ease;
 
         &:first-child {
-          margin-inline-end: 2rem;
+          margin-inline-end: 3rem;
         }
 
         &.link:hover, &.link:focus {
-          transform: scale(1.1);
-          transition: all .5s ease;
-          text-shadow: none;
+          @include mx.scaleTransition
         }
       }
 

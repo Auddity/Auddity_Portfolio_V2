@@ -50,12 +50,7 @@
       font-size: 1.4rem;
 
       a {
-        background-image: v.$movingGradient;
-        background-size: 1400%;
-        background-clip: text;
-        background-position: top left;
-        color: transparent;
-        animation: bgcolors 5s infinite alternate;
+        @include mx.movingGradient;
       }
     }
   }

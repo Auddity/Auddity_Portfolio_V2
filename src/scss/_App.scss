@@ -16,8 +16,24 @@ main {
   display: none;
 }
 
+/////// ALL KEYFRAMES  ////////
+// Layout Vert Lines
+@keyframes vertMoveDown {
+  0% {
+    top: -100%
+  } 100% {
+    top: 100%;
+  }
+}
+@keyframes vertMoveUp {
+  0% {
+    top: 100%;
+  } 100% {
+    top: -100%;
+  }
+}
 
-// ALL KEYFRAMES
+// Moving Gradient
 @keyframes bg-movement {
   0% {
     background-position: top left;

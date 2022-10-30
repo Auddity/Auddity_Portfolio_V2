@@ -66,17 +66,4 @@
   }
 }
 
-@keyframes vertMoveDown {
-  0% {
-    top: -100%
-  } 100% {
-    top: 100%;
-  }
-}
-@keyframes vertMoveUp {
-  0% {
-    top: 100%;
-  } 100% {
-    top: -100%;
-  }
-}
+// Animation in _App.scss

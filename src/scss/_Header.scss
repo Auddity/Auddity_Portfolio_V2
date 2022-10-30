@@ -26,14 +26,8 @@
       transition: all .5s ease;
 
       &:hover, &:focus {
-        text-shadow: none;
-        background-image: v.$movingGradient;
-        background-clip: text;
-        color: transparent;
-        background-size: 2200%;
-        animation: bg-movement 4s infinite;
-        transform: scale(1.1);
-        transition: all .5s ease;
+        @include mx.movingGradient;
+        @include mx.scaleTransition;
       }
     }
   }

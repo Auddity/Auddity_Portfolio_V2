@@ -11,20 +11,12 @@
     }
 
     a {
-      display: inline-block;
       font-size: 2.8rem;
-      background-image: v.$movingGradient;
-      background-size: 2200%;
-      background-position: top left;
-      background-clip: text;
-      color: transparent;
-      animation: bg-movement 4s infinite alternate;
+      @include mx.movingGradient;
       transition: all .5s ease;
 
       &:hover, &:focus {
-        transform: scale(1.1);
-        transition: all .5s ease;
-        text-shadow: none;
+        @include mx.scaleTransition;
       }
     }
   }

@@ -1,8 +1,16 @@
+@use './variables' as v;
+
+// Extensions
 %flex {
   display: flex;
   align-items: center;
 }
 
+%transition {
+  transition: all .5s ease;
+}
+
+// FLEX Mixins
 @mixin flexCenter {
   @extend %flex;
   justify-content: center;
@@ -23,6 +31,7 @@
   justify-content: flex-start;
 }
 
+// MEDIA QUERY Mixins
 @mixin mq($size) {
   @media only screen and (min-width: $size) {
     @content;
@@ -33,4 +42,22 @@
   @media screen and (min-height: $size) {
     @content;
   }
+}
+
+// MOVING GRADIENT Mixin
+@mixin movingGradient {
+  display: inline-block;
+  background-image: v.$movingGradient;
+  background-size: 2200%;
+  background-position: top left;
+  background-clip: text;
+  color: transparent;
+  animation: bg-movement 4s infinite alternate;
+  @extend %transition;
+}
+
+// SCALE TRANSITION Mixin
+@mixin scaleTransition {
+  @extend %transition;
+  transform: scale(1.1);
 }
